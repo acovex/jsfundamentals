@@ -124,6 +124,7 @@
 					</p>
 				</section>
 
+				<!-- Pruebas 2 input-->
 				<section>
 					<p>
 						Ejemplo de input
@@ -141,7 +142,7 @@
 					<p>
 						<a class="cursor-pointer">
 							<img width="148" height="208" onclick="
-								var sentido = prompt('Por favor dime tu edad: ');
+								var sentido = prompt('El sentido de la vida es: ');
 								if(sentido === '42') {
 									alert('Ten viajero, toma tu toalla');
 								} else {
@@ -151,6 +152,96 @@
 						</a>
 					</p>
 					</br>
+				</section>
+
+			</section>
+
+			<!--Operators-->
+			<section>
+
+				<!--Operators 1-->
+				<section>
+					<h1>Operadores</h1>
+					<!--
+						Ya hemos visto los operadores = y *. 
+						En javascript primero se calcula el valor de los operandos y luego se asigna.
+						Se tienen que declaran primero las variables si no no se pueden operador con ellas.
+						Se tiene que declaran primero las variables antes de usarlas.
+					-->
+					<pre>
+						<code class="javascript f-s-25p" data-trim contenteditable>
+							var a = 20;
+							a = a + 1;
+							a = a * 2;
+							console.log( a ); // 42
+						</code>
+					</pre>
+					<ul class="fragment fade-up f-s-85">
+
+						<li>En javascript primero se calcula el valor de los operandos y luego se asigna.
+						</li>
+						<li>Se tienen que declaran primero las variables si no no se pueden operar con
+							ellas.</li>
+					</ul>
+
+				</section>
+
+				<!--Operators 2-->
+				<section>
+					<h2>Tipos de operadores</h2>
+
+					<ul>
+						<li><a href="#/4/2" class="cursor-pointer">Asignación</a></li>
+						<li><a class="cursor-pointer">Matemáticos</a></li>
+						<li><a class="cursor-pointer">Asignación compuesta</a></li>
+						<li><a class="cursor-pointer">Incrementar/Decrecer</a></li>
+						<li><a class="cursor-pointer">Acceder a propiedades del objeto</a></li>
+						<li><a class="cursor-pointer">Igualdad</a></li>
+						<li><a class="cursor-pointer">Comparativos</a></li>
+						<li><a class="cursor-pointer">Lógicos</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Operadores de asignación</h2>
+					<p>Es el carácter <strong>=</strong></p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 18px;">
+									var pitufo = 'Esto es un pitufo';
+									alert(pitufo);
+									pitufo = 3; // Ahora pitufo va a ser un número
+									alert(pitufo);
+									pitufo = {
+										altura: 0.1,
+										color: 'azul'
+									}; // Ahora pitufo va a ser un objeto
+									alert('Soy un pitufo y mido ' + pitufo.altura + ' metros y soy 
+									de color ' + pitufo.color);
+									
+						</code>
+					</pre>
+
+					<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
+						<img width="80" height="80" alt="volverDesdeAsignacion"
+							data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+							style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+					</a>
+
+					<a class="cursor-pointer" title="Ejecutar código">
+						<img width="80" height="80" onclick="
+									var pitufo = 'Esto es un pitufo';
+									alert(pitufo); 
+									pitufo = 3; // Ahora pitufo va a ser un número
+									alert(pitufo);
+									pitufo = {
+										altura: 0.1,
+										color: 'azul'
+									}; // Ahora pitufo va a ser un objeto
+									alert('Soy un pitufo y mido ' + pitufo.altura + ' metros y soy de color ' + pitufo.color);
+								" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="asignacion"
+							style="transform: rotate(-90deg); -webkit-transform: rotate(90);">
+					</a>
+
 				</section>
 
 

@@ -1,33 +1,41 @@
 img[alt="Title"] {
-  width: 38%;
+    width: 38%;
 }
 
 .blue {
-  color: blue;
+    color: blue;
 }
 
 .green {
-  color: green;
+    color: green;
 }
 
 .red {
-  color: red;
+    color: red;
 }
 
 .yellow {
-  color: yellow;
+    color: yellow;
 }
 
 .largue {
-  font-size: 300%;
+    font-size: 300%;
 }
 
 .border-red {
-  border-style: solid;
-  border-width: 5px;
-  border-color: red;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
 }
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.f-s-85 {
+    font-size: 85%;
+}
+
+.f-s-25p {
+    font-size: 25px;
 }
