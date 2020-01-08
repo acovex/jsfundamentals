@@ -1,3 +1,3 @@
-# Sentencias
+# Expresiones
 
 ## `a = b * 2`

@@ -43,50 +43,116 @@
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
 
+			<!-- Title-->
 			<section data-markdown="slides/title/title.md">
 			</section>
 
+			<!--Statements-->
 			<section>
-
+				<!--Statements 1-->
 				<section data-markdown="slides/statements/statements1.md">
 				</section>
 
+				<!--Statements 2-->
 				<section>
-					<p class="largue"><span class="blue border-red">a</span> <span class="green">=</span> <span
-							class="blue border-red">b</span>
+					<p class="largue"><span class="blue">a</span> <span class="green">=</span>
+						<span class="blue">b</span>
 						<span class="green">*</span> <span class="yellow">2</span> </p>
 					<p>
 						<ul>
-							<li><span class="blue">a b</span>: Son variables, sirven para almacenar datos de manera
+							<li class="fragment fade-up"><span class="blue">a b</span>: Son variables, sirven
+								para almacenar datos de
+								manera
 								temporal</li>
-						</ul>
-					</p>
-				</section>
-
-				<section>
-					<p class="largue"><span class="blue">a</span> <span class="green border-red">=</span> <span
-							class="blue">b</span>
-						<span class="green border-red">*</span> <span class="yellow">2</span> </p>
-					<p>
-						<ul>
-							<li><span class="green">= *</span>: Son opereadores, sirven para realizar acciones sobre
-								variables o datos estáticos, en este caso asignación el = y operación aritmética el *
+							<li class="fragment fade-up"><span class="green">= *</span>: Son opereadores,
+								sirven para realizar acciones
+								sobre
+								variables o datos estáticos, en este caso asignación el = y operación
+								aritmética el *
 							</li>
-						</ul>
-					</p>
-				</section>
-
-				<section>
-					<p class="largue"><span class="blue">a</span> <span class="green">=</span> <span
-							class="blue">b</span>
-						<span class="green">*</span> <span class="yellow border-red">2</span> </p>
-					<p>
-						<ul>
-							<li><span class="yellow">2</span>: Es un valor literal, no estan almacenado en
+							<li class="fragment fade-up"><span class="yellow">2</span>: Es un valor literal,
+								no estan almacenado en
 								variable</li>
 						</ul>
 					</p>
 				</section>
+
+			</section>
+
+			<!-- Expressions-->
+			<section>
+
+				<!-- Expressions 1-->
+				<section data-markdown="slides/expressions/expressions1.md">
+				</section>
+
+				<!-- Expressions 2-->
+				<section data-markdown="slides/expressions/expressions2.md">
+				</section>
+
+				<!-- Expressions 3-->
+				<section data-markdown="slides/expressions/expressions3.md">
+				</section>
+
+				<!-- Expressions 4-->
+				<section data-markdown="slides/expressions/expressions4.md">
+				</section>
+
+			</section>
+
+			<!-- Pruebas 1-->
+			<section>
+				<!-- Pruebas 1 output-->
+				<section>
+					<h1>Pruebas</h1>
+					<p>
+						Ejemplo de output
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 18px;">
+									console.log('string de salida por consola');
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer">
+							<img width="178" height="238"
+								onclick="console.log('string de salida por consola')"
+								data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+								alt="consoleOutput"
+								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
+						</a>
+					</p>
+				</section>
+
+				<section>
+					<p>
+						Ejemplo de input
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 18px;">
+									var sentido = prompt('El sentido de la vida es: ');
+									if(sentido === '42') {
+										console.log('Ten viajero, toma tu toalla');
+									} else {
+										console.log('No sabes nada Juan de las nieves');
+									}
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer">
+							<img width="148" height="208" onclick="
+								var sentido = prompt('Por favor dime tu edad: ');
+								if(sentido === '42') {
+									alert('Ten viajero, toma tu toalla');
+								} else {
+									alert('No sabes nada Juan de las nieves');
+								}" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="promptInput"
+								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
+						</a>
+					</p>
+					</br>
+				</section>
+
 
 			</section>
 

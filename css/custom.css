@@ -27,3 +27,7 @@ img[alt="Title"] {
   border-width: 5px;
   border-color: red;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
