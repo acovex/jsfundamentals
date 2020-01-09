@@ -196,8 +196,8 @@
 						<li><a href="#/4/5" class="cursor-pointer">Incrementar/Decrecer</a></li>
 						<li><a href="#/4/6" class="cursor-pointer">Acceder a propiedades del objeto</a></li>
 						<li><a href="#/4/7" class="cursor-pointer">Igualdad</a></li>
-						<li><a href="#/4/8" class="cursor-pointer">Comparativos</a></li>
-						<li><a href="#/4/9" class="cursor-pointer">Lógicos</a></li>
+						<li><a href="#/4/9" class="cursor-pointer">Comparativos</a></li>
+						<li><a href="#/4/10" class="cursor-pointer">Lógicos</a></li>
 					</ul>
 				</section>
 
@@ -402,9 +402,13 @@
 										alert("2 === 2: " + (2 === 2));
 									</a>
 								</li>
-								<a class="cursor-pointer" onclick="alert('false === 0 : ' + (false === 0))">
-									alert('false === 0 : ' + (false === 0));
-								</a>
+								<li>
+									<a class="cursor-pointer"
+										onclick="alert('false === 0 : ' + (false === 0))">
+										alert('false === 0 : ' + (false === 0));
+									</a>
+								</li>
+
 							</ul>
 
 						</li>
@@ -469,13 +473,112 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeIgualdad" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeDesIgualdad"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
 
 				</section>
 
+				<!--Operators de comparación-->
+				<section>
+					<h2>Operadores de comparación</h2>
+
+					<ul>
+						<li><strong class="yellow">&#60; Menor a, &#60;= Menor o igual a</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 < 2 : ' + (2 < 2))">
+										alert(' 2 &#60; 2 : ' + (2 &#60; 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 <= 2 : ' + (2 <= 2))">
+										alert(' 2 &#60;= 2 : ' + (2 &#60;= 2));
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="yellow">&#62; Mayor a, &#62;= Mayor o igual a </strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 > 2 : ' + (2 > 2))">
+										alert(' 2 &#60; 2 : ' + (2 &#60; 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 >= 2 : ' + (2 >= 2))">
+										alert(' 2 &#60;= 2 : ' + (2 &#60;= 2));
+									</a>
+								</li>
+							</ul>
+
+						</li>
+
+					</ul>
+					<p>
+						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeComparacion"
+								data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+				<!--Operators logicos-->
+				<section>
+					<h2>Operadores lógicos</h2>
+
+					<ul>
+						<li><strong class="yellow">&& (and)</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer"
+										onclick="var a = 3; var b = 4; alert(a && b ? '¡Existen!' : 'Alguno no existe');">
+										var a = 3; var b = 4; alert(a && b ? '¡Existen!' : 'Alguno no
+										existe');
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer"
+										onclick="var a = 3; var b = null; alert(a && b ? '¡Existen!' : 'Alguno no existe');">
+										var a = 3; var b = null; alert(a && b ? '¡Existen!' : 'Alguno no
+										existe');
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="yellow">|| (or)</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer"
+										onclick="var a = 3; var b = null; alert(a || b)">
+										var a = 3; var b = null; alert(a || b);
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer"
+										onclick="var a = null; var b = 5; alert(a || b)">
+										var a = null; var b = 5; alert(a || b);
+									</a>
+								</li>
+							</ul>
+
+						</li>
+
+					</ul>
+					<p>
+						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeLogicos" data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
 
 			</section>
 
