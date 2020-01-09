@@ -117,8 +117,7 @@
 						<a class="cursor-pointer">
 							<img width="178" height="238"
 								onclick="console.log('string de salida por consola')"
-								data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
-								alt="consoleOutput"
+								data-src="./img/arrow.png" alt="consoleOutput"
 								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
 						</a>
 					</p>
@@ -192,19 +191,20 @@
 
 					<ul>
 						<li><a href="#/4/2" class="cursor-pointer">Asignación</a></li>
-						<li><a class="cursor-pointer">Matemáticos</a></li>
-						<li><a class="cursor-pointer">Asignación compuesta</a></li>
-						<li><a class="cursor-pointer">Incrementar/Decrecer</a></li>
-						<li><a class="cursor-pointer">Acceder a propiedades del objeto</a></li>
-						<li><a class="cursor-pointer">Igualdad</a></li>
-						<li><a class="cursor-pointer">Comparativos</a></li>
-						<li><a class="cursor-pointer">Lógicos</a></li>
+						<li><a href="#/4/3" class="cursor-pointer">Matemáticos</a></li>
+						<li><a href="#/4/4" class="cursor-pointer">Asignación compuesta</a></li>
+						<li><a href="#/4/5" class="cursor-pointer">Incrementar/Decrecer</a></li>
+						<li><a href="#/4/6" class="cursor-pointer">Acceder a propiedades del objeto</a></li>
+						<li><a href="#/4/7" class="cursor-pointer">Igualdad</a></li>
+						<li><a href="#/4/8" class="cursor-pointer">Comparativos</a></li>
+						<li><a href="#/4/9" class="cursor-pointer">Lógicos</a></li>
 					</ul>
 				</section>
 
+				<!--Operators asignación-->
 				<section>
 					<h2>Operadores de asignación</h2>
-					<p>Es el carácter <strong>=</strong></p>
+					<p>Es el carácter <span class="yellow">=</span></p>
 					<pre>
 						<code class="javascript" data-trim contenteditable style="font-size: 18px;">
 									var pitufo = 'Esto es un pitufo';
@@ -222,8 +222,7 @@
 					</pre>
 
 					<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-						<img width="80" height="80" alt="volverDesdeAsignacion"
-							data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+						<img width="80" height="80" alt="volverDesdeAsignacion" data-src="./img/arrow.png"
 							style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 					</a>
 
@@ -238,9 +237,242 @@
 										color: 'azul'
 									}; // Ahora pitufo va a ser un objeto
 									alert('Soy un pitufo y mido ' + pitufo.altura + ' metros y soy de color ' + pitufo.color);
-								" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="asignacion"
+								" data-src="./img/arrow.png" alt="asignacion"
 							style="transform: rotate(-90deg); -webkit-transform: rotate(90);">
 					</a>
+
+				</section>
+
+
+				<!--Operators matemáticos-->
+				<section>
+					<h2>Operadores matemáticos</h2>
+
+					<ul>
+						<li><a class="cursor-pointer" onclick="alert(2+3)">+ Adición: Ej: alert(2+3)</a></li>
+						<li><a class="cursor-pointer" onclick="alert(52-15)">- Substracción: Ej.
+								alert(52-15)</a></li>
+						<li><a class="cursor-pointer" onclick="alert(5*6)">* Multiplicación: Ej.
+								alert(5*6)</a></li>
+						<li><a class="cursor-pointer" onclick="alert(12/5)">/ División: Ej. alert(12/5)</a>
+						</li>
+					</ul>
+					<p>
+						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeMatemáticos"
+								data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+				<!--Operators asignación compuesta-->
+				<section>
+					<h2>Operadores de asignación compuesta</h2>
+
+					<p>
+						Son operadores compuestos, primero realizan la operación matemática y luego la
+						asignación.
+					</p>
+
+					<ul>
+						<li><a class="cursor-pointer" onclick="var a = 2; a+=3; alert(a)">+= Adición: Ej: var
+								a = 2; a+=3; alert(a)</a></li>
+						<li><a class="cursor-pointer" onclick="var a = 52; a-=15; alert(a)">-= Substracción:
+								Ej. var a = 52; a-=15; alert(a)</a></li>
+						<li><a class="cursor-pointer" onclick="var a = 5; a*=6; alert(a)">*= Multiplicación:
+								Ej.
+								var a = 5; a*=6; alert(a)</a></li>
+						<li><a class="cursor-pointer" onclick="var a = 12; a/=5; alert(a)">/= División: Ej.
+								var a = 12; a/=5; alert(a)</a>
+						</li>
+					</ul>
+					<p>
+						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta"
+								data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+
+				<!--Operators incrementar decrecer-->
+				<section>
+					<h2>Operadores de incrementar decrecer</h2>
+
+					<p>
+						Para facilitar la adición o decrecimiento de valor 1. Operación más asignación.
+					</p>
+
+					<ul>
+						<li><a class="cursor-pointer" onclick="a = 2; a++; alert(a)">++ Incrementar: Ej: var
+								a = 2; a++; alert(a)</a></li>
+						<li><a class="cursor-pointer" onclick="a = 2; a--; alert(a)">-- Decrecer:
+								Ej. a = 2; a--; alert(a)</a></li>
+					</ul>
+					<p>
+						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer"
+								data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+				<!--Operators Acceder a propiedades de objetos-->
+				<section>
+					<h2>Acceder a propiedades de objetos</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 18px;">
+									var pitufo = {
+										altura: 0.1,
+										color: 'azul',
+										describir: function () {
+											alert('Altura: ' + this.altura + ', color: ' + this.color);
+										}
+									};
+									pitufo.describir();
+									pitufo.altura = 2; // Manera primera de acceder a propiedades de objetos
+									pitufo['color'] = 'rojo'; // Otra manera de acceder a propiedades del objeto
+									pitufo.describir();		
+						</code>
+					</pre>
+					<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
+						<img width="80" height="80" alt="volverDesdeObjetos" data-src="./img/arrow.png"
+							style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+					</a>
+
+					<a class="cursor-pointer" title="Ejecutar código">
+						<img width="80" height="80" onclick="
+									var pitufo = {
+										altura: 0.1,
+										color: 'azul',
+										describir: function () {
+											alert('Altura: ' + this.altura + ', color: ' + this.color);
+										}
+									};
+									pitufo.describir();
+									pitufo.altura = 2;
+									pitufo['color'] = 'rojo';
+									pitufo.describir();
+													" data-src="./img/arrow.png" alt="asignacion"
+							style="transform: rotate(-90deg); -webkit-transform: rotate(90);">
+					</a>
+
+				</section>
+
+				<!--Operators de igualdad-->
+				<section>
+					<h2>Operadores de igualdad</h2>
+
+					<ul>
+						<li><strong class="yellow">== Igual sin restricción de tipo</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 == \'2\' : ' + (2 == '2'))">
+										alert("2 == '2': " + (2 == '2'));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 == 2 : ' + (2 == 2))">
+										alert("2 == 2: " + (2 == 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('false == 0 : ' + (false == 0))">
+										alert('false == 0 : ' + (false == 0));
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="yellow">=== Igual con restricción de tipo</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 === \'2\' : ' + (2 === '2'))">
+										alert("2 === '2': " + (2 === '2'));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 === 2 : ' + (2 === 2))">
+										alert("2 === 2: " + (2 === 2));
+									</a>
+								</li>
+								<a class="cursor-pointer" onclick="alert('false === 0 : ' + (false === 0))">
+									alert('false === 0 : ' + (false === 0));
+								</a>
+							</ul>
+
+						</li>
+
+					</ul>
+					<p>
+						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeIgualdad" data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+				<!--Operators de desigualdad-->
+				<section>
+					<h2>Operadores de igualdad</h2>
+
+					<ul>
+						<li><strong class="yellow">!= Distinto a sin restricción de tipo</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 != \'2\' : ' + (2 != '2'))">
+										alert("2 != '2': " + (2 != '2'));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 != 2 : ' + (2 != 2))">
+										alert("2 != 2: " + (2 != 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('false != 0 : ' + (false != 0))">
+										alert('false == 0 : ' + (false == 0));
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="yellow">!== Distinto a con restricción de tipo</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 !== \'2\' : ' + (2 !== '2'))">
+										alert("2 !== '2': " + (2 !== '2'));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 !== 2 : ' + (2 !== 2))">
+										alert("2 !== 2: " + (2 !== 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer"
+										onclick="alert('false !== 0 : ' + (false !== 0))">
+										alert('false === 0 : ' + (false === 0));
+									</a>
+								</li>
+							</ul>
+
+						</li>
+
+					</ul>
+					<p>
+						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeIgualdad" data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
 
 				</section>
 
