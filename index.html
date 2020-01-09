@@ -115,8 +115,7 @@
 					</pre>
 					<p>
 						<a class="cursor-pointer">
-							<img width="178" height="238"
-								onclick="console.log('string de salida por consola')"
+							<img width="178" height="238" onclick="console.log('string de salida por consola')"
 								data-src="./img/arrow.png" alt="consoleOutput"
 								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
 						</a>
@@ -259,8 +258,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeMatemáticos"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeMatemáticos" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -290,8 +288,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -315,8 +312,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -403,8 +399,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer"
-										onclick="alert('false === 0 : ' + (false === 0))">
+									<a class="cursor-pointer" onclick="alert('false === 0 : ' + (false === 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -461,8 +456,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer"
-										onclick="alert('false !== 0 : ' + (false !== 0))">
+									<a class="cursor-pointer" onclick="alert('false !== 0 : ' + (false !== 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -473,8 +467,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeDesIgualdad"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeDesIgualdad" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -520,8 +513,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeComparacion"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeComparacion" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -555,14 +547,12 @@
 							<strong class="yellow">|| (or)</strong>
 							<ul>
 								<li>
-									<a class="cursor-pointer"
-										onclick="var a = 3; var b = null; alert(a || b)">
+									<a class="cursor-pointer" onclick="var a = 3; var b = null; alert(a || b)">
 										var a = 3; var b = null; alert(a || b);
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer"
-										onclick="var a = null; var b = 5; alert(a || b)">
+									<a class="cursor-pointer" onclick="var a = null; var b = 5; alert(a || b)">
 										var a = null; var b = 5; alert(a || b);
 									</a>
 								</li>
@@ -582,6 +572,67 @@
 
 			</section>
 
+			<!-- Code comments-->
+			<section>
+				<h2>Tipos de comentarios en el código</h2>
+
+				<pre>
+					<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+						// Esto es un comentario en linea única
+
+						/* Esto es  un comentario
+							en varias 
+								lineas
+						*/
+						var a = 42; // 42 es el sentido de la vida
+
+						/* El siguente valor va a ser este 
+						porque se ha visto que responde a 
+						cada pregunta en el universo. */
+						var a = 42;
+
+						var a = /* valor arbitrario */ 42;
+						console.log( a ); // 42
+					</code>
+				</pre>
+
+			</section>
+
+			<!-- Code blocks-->
+			<section>
+				<h2>Bloques de código</h2>
+				<p>
+					Cuando necesitamos una serie de operaciones juntas las agrupamos en lo que llamamos bloque.
+					Los bloques estan definidos dentro de un par de llaves { .. }
+				</p>
+				<pre>
+					<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+						var montante = 99.99;
+						// un bloque génerico
+						{
+							montante = montante * 2;
+							console.log( montante ); // 199.98
+						}
+					</code>
+				</pre>
+			</section>
+
+
+			<!-- Values and types-->
+			<section>
+
+				<!-- Values and types 1-->
+				<section>
+					<h1>Valores y tipos</h1>
+					<ul>
+						<li>Para operaciones matemáticas: <a>number</a></li>
+						<li>Para imprimir valores en pantalla: <a>string</a></li>
+						<li>Para toma de decisiones: <a>boolean</a></li>
+					</ul>
+
+				</section>
+
+			</section>
 
 		</div>
 
