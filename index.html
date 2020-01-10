@@ -16,7 +16,7 @@
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="css/theme/league.css" id="theme">
 	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Theme used for syntax highlighting of code -->
@@ -115,7 +115,8 @@
 					</pre>
 					<p>
 						<a class="cursor-pointer">
-							<img width="178" height="238" onclick="console.log('string de salida por consola')"
+							<img width="178" height="238"
+								onclick="console.log('string de salida por consola')"
 								data-src="./img/arrow.png" alt="consoleOutput"
 								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
 						</a>
@@ -258,7 +259,8 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeMatemáticos" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeMatemáticos"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -288,7 +290,8 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -312,7 +315,8 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -399,7 +403,8 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer" onclick="alert('false === 0 : ' + (false === 0))">
+									<a class="cursor-pointer"
+										onclick="alert('false === 0 : ' + (false === 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -456,7 +461,8 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer" onclick="alert('false !== 0 : ' + (false !== 0))">
+									<a class="cursor-pointer"
+										onclick="alert('false !== 0 : ' + (false !== 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -467,7 +473,8 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeDesIgualdad" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeDesIgualdad"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -513,7 +520,8 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeComparacion" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeComparacion"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -547,12 +555,14 @@
 							<strong class="yellow">|| (or)</strong>
 							<ul>
 								<li>
-									<a class="cursor-pointer" onclick="var a = 3; var b = null; alert(a || b)">
+									<a class="cursor-pointer"
+										onclick="var a = 3; var b = null; alert(a || b)">
 										var a = 3; var b = null; alert(a || b);
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer" onclick="var a = null; var b = 5; alert(a || b)">
+									<a class="cursor-pointer"
+										onclick="var a = null; var b = 5; alert(a || b)">
 										var a = null; var b = 5; alert(a || b);
 									</a>
 								</li>
@@ -602,7 +612,8 @@
 			<section>
 				<h2>Bloques de código</h2>
 				<p>
-					Cuando necesitamos una serie de operaciones juntas las agrupamos en lo que llamamos bloque.
+					Cuando necesitamos una serie de operaciones juntas las agrupamos en lo que llamamos
+					bloque.
 					Los bloques estan definidos dentro de un par de llaves { .. }
 				</p>
 				<pre>
@@ -616,6 +627,172 @@
 					</code>
 				</pre>
 			</section>
+
+
+			<!-- Conditionals-->
+			<section>
+
+				<!-- Conditionals 1-->
+				<section>
+					<h2>Condicionales: if</h2>
+					<p>
+						Sirven para acceder a un bloque de código en caso de que una condición se cumpla
+					</p>
+					<p>
+						<form>
+							<span style="font-size: 50%;">Dinero total en el banco:</span> <input
+								type="number" value=100 name="totalBanco" id="totalBanco"><br>
+							<span style="font-size: 50%;">Precio del producto:</span> <input type="number"
+								value=50 name="precioProducto" id="precioProducto">
+						</form>
+					</p>
+					<p>
+						<a class="cursor-pointer" onclick="
+									var totalBanco = document.getElementById('totalBanco').value;
+									var precioProducto = document.getElementById('precioProducto').value;
+									if(totalBanco && precioProducto){
+										totalBanco = Number(totalBanco);
+										precioProducto = Number(precioProducto);
+										if(totalBanco < precioProducto) {
+											alert('Producto muy caro, no puedes comprarlo porque no tienes dinero en el banco');
+										} else if (totalBanco === precioProducto) {
+											alert('Puedes comprarlo pero te quedas sin blanca');
+										} else {
+											alert('Puedes comprarlo sin problema. Te quedaría en la cuenta ' + (totalBanco - precioProducto).toFixed(2));
+										}
+									}else {
+										alert('No has rellenado uno de los campos');
+									}
+									">¿Puedo comprar el producto?</a>
+					</p>
+				</section>
+
+				<!-- Conditionals 2-->
+				<section>
+					<h2>Condicionales: if</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+										var totalBanco = document.getElementById('totalBanco').value;
+										var precioProducto = document.getElementById('precioProducto').value;
+										if(totalBanco && precioProducto){
+											totalBanco = Number(totalBanco);
+											precioProducto = Number(precioProducto);
+											if(totalBanco < precioProducto) { 
+												alert('Producto muy caro, no puedes comprarlo porque 
+												no tienes dinero en el banco'); 
+											} else if (totalBanco === precioProducto) { 
+												alert('Puedes comprarlo pero te quedas sin blanca'); 
+											} else { 
+												alert('Puedes comprarlo sin problema. Te quedaría en la cuenta ' 
+												+ (totalBanco - precioProducto).toFixed(2));
+											}
+										} else {
+											alert(' No has rellenado uno de los campos'); 
+										}
+						</code>
+					</pre>
+				</section>
+
+
+				<!-- Conditionals 3-->
+				<section>
+					<h2>Condicionales: switch</h2>
+					<p style="font-size: 80%">
+						Sirven para acceder a un bloque de código u otro en caso de que se cumpla un
+						determinado valor o no para el caso correspondiente.
+					</p>
+					<p>
+						<form id="colorPitufoForm">
+							<span>Color del pitufo</span><br>
+							<input type="hidden" id="colorRealPitufo" name="colorRealPitufo" value="azul">
+							<input type="radio" name="colorPitufo" id="pitufoAzul" value="azul"><label
+								for="pitufoAzul" style="font-size: 50%;">Azul
+							</label>
+							<input type="radio" name="colorPitufo" id="pitufoRojo" value="rojo"><label
+								for="pitufoRojo" style="font-size: 50%;">Rojo
+							</label>
+							<input type="radio" name="colorPitufo" id="pitufoVerde" value="verde"
+								checked><label for="pitufoVerde" style="font-size: 50%;">Verde </label>
+							<input type="radio" name="colorPitufo" id="pitufoAmarillo" value="amarillo"
+								checked><label for="pitufoAmarillo" style="font-size: 50%;">Amarillo </label>
+						</form>
+					</p>
+					<p>
+						<a class="cursor-pointer" onclick="
+						var inputsForm = document.getElementById('colorPitufoForm').elements;
+						var colorPitufoReal = inputsForm['colorRealPitufo'].value;
+						var colorPitufoElegido = inputsForm['colorPitufo'].value;
+						switch(colorPitufoElegido) {
+							case 'azul': 
+								if(colorPitufoReal === 'azul') {
+									alert('¡Correcto! Los pitufos siempre han sido azules');
+								} else {
+									alert('¡Error! Este es un raro caso de un pitufo malvado');
+								}
+								break;
+							case 'rojo': 
+								if(colorPitufoReal === 'rojo') {
+									alert('¡Correcto! Este pitufo es satán en forma de hongo andante');
+								} else {
+									alert('¡Error! Los pitufos no son rojos, en todo caso el gorro de papa pitufo');
+								}
+								break;
+							default: 
+								alert('Lol, es imposible que un pitufo sea de este color');
+								break;
+						}">¿De que color es el pitufo?</a>
+					</p>
+					<p>
+						<img id="fotoPitufo" class="cursor-pointer" width="150" height="200" onclick="
+							var colorPitufoReal = document.getElementById('colorRealPitufo').value;
+							if(colorPitufoReal === 'azul') {
+								document.getElementById('colorRealPitufo').value = 'rojo';
+								document.getElementById('fotoPitufo').src = './img/pitufo_rojo.jpg';
+							} else {
+								document.getElementById('colorRealPitufo').value = 'azul';
+								document.getElementById('fotoPitufo').src = './img/pitufo_azul.jpg';
+							}
+						" data-src="./img/pitufo_azul.jpg" alt="Pitufo">
+					</p>
+				</section>
+
+
+				<!-- Conditionals 4-->
+				<section>
+					<h2>Condicionales: switch</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+						var inputsForm = document.getElementById('colorPitufoForm').elements;
+						var colorPitufoReal = inputsForm['colorRealPitufo'].value;
+						var colorPitufoElegido = inputsForm['colorPitufo'].value;
+						switch(colorPitufoElegido) {
+							case 'azul': 
+								if(colorPitufoReal === 'azul') {
+									alert('¡Correcto! Los pitufos siempre han sido azules');
+								} else {
+									alert('¡Error! Este es un raro caso de un pitufo malvado');
+								}
+								break;
+							case 'rojo': 
+								if(colorPitufoReal === 'rojo') {
+									alert('¡Correcto! Este pitufo es satán en forma de hongo andante');
+								} else {
+									alert('¡Error! Los pitufos no son rojos, en todo caso el 
+									gorro de papa pitufo');
+								}
+								break;
+							default: 
+								alert('Lol, es imposible que un pitufo sea de este color');
+								break;
+						}
+						</code>
+					</pre>
+
+				</section>
+
+			</section>
+
+
 
 
 			<!-- Values and types-->
