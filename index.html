@@ -71,7 +71,7 @@
 								aritmética el *
 							</li>
 							<li class="fragment fade-up"><span class="yellow">2</span>: Es un valor literal,
-								no estan almacenado en
+								no esta almacenado en
 								variable</li>
 						</ul>
 					</p>
@@ -115,8 +115,7 @@
 					</pre>
 					<p>
 						<a class="cursor-pointer">
-							<img width="178" height="238"
-								onclick="console.log('string de salida por consola')"
+							<img width="178" height="238" onclick="console.log('string de salida por consola')"
 								data-src="./img/arrow.png" alt="consoleOutput"
 								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
 						</a>
@@ -259,8 +258,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeMatemáticos"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeMatemáticos" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -290,8 +288,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -315,8 +312,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -403,8 +399,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer"
-										onclick="alert('false === 0 : ' + (false === 0))">
+									<a class="cursor-pointer" onclick="alert('false === 0 : ' + (false === 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -461,8 +456,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer"
-										onclick="alert('false !== 0 : ' + (false !== 0))">
+									<a class="cursor-pointer" onclick="alert('false !== 0 : ' + (false !== 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -473,8 +467,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeDesIgualdad"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeDesIgualdad" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -520,8 +513,7 @@
 					</ul>
 					<p>
 						<a href="#/4/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeComparacion"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeComparacion" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -555,14 +547,12 @@
 							<strong class="yellow">|| (or)</strong>
 							<ul>
 								<li>
-									<a class="cursor-pointer"
-										onclick="var a = 3; var b = null; alert(a || b)">
+									<a class="cursor-pointer" onclick="var a = 3; var b = null; alert(a || b)">
 										var a = 3; var b = null; alert(a || b);
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer"
-										onclick="var a = null; var b = 5; alert(a || b)">
+									<a class="cursor-pointer" onclick="var a = null; var b = 5; alert(a || b)">
 										var a = null; var b = 5; alert(a || b);
 									</a>
 								</li>
@@ -640,10 +630,10 @@
 					</p>
 					<p>
 						<form>
-							<span style="font-size: 50%;">Dinero total en el banco:</span> <input
-								type="number" value=100 name="totalBanco" id="totalBanco"><br>
-							<span style="font-size: 50%;">Precio del producto:</span> <input type="number"
-								value=50 name="precioProducto" id="precioProducto">
+							<span style="font-size: 50%;">Dinero total en el banco:</span> <input type="number"
+								value=100 name="totalBanco" id="totalBanco"><br>
+							<span style="font-size: 50%;">Precio del producto:</span> <input type="number" value=50
+								name="precioProducto" id="precioProducto">
 						</form>
 					</p>
 					<p>
@@ -705,16 +695,18 @@
 						<form id="colorPitufoForm">
 							<span>Color del pitufo</span><br>
 							<input type="hidden" id="colorRealPitufo" name="colorRealPitufo" value="azul">
-							<input type="radio" name="colorPitufo" id="pitufoAzul" value="azul"><label
-								for="pitufoAzul" style="font-size: 50%;">Azul
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoAzul"
+								value="azul"><label class="cursor-pointer" for="pitufoAzul" style="font-size: 50%;">Azul
 							</label>
-							<input type="radio" name="colorPitufo" id="pitufoRojo" value="rojo"><label
-								for="pitufoRojo" style="font-size: 50%;">Rojo
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoRojo"
+								value="rojo"><label class="cursor-pointer" for="pitufoRojo" style="font-size: 50%;">Rojo
 							</label>
-							<input type="radio" name="colorPitufo" id="pitufoVerde" value="verde"
-								checked><label for="pitufoVerde" style="font-size: 50%;">Verde </label>
-							<input type="radio" name="colorPitufo" id="pitufoAmarillo" value="amarillo"
-								checked><label for="pitufoAmarillo" style="font-size: 50%;">Amarillo </label>
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoVerde" value="verde"
+								checked><label class="cursor-pointer" for="pitufoVerde" style="font-size: 50%;">Verde
+							</label>
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoAmarillo"
+								value="amarillo" checked><label class="cursor-pointer" for="pitufoAmarillo"
+								style="font-size: 50%;">Amarillo </label>
 						</form>
 					</p>
 					<p>
@@ -792,6 +784,169 @@
 
 			</section>
 
+			<!-- Loops -->
+			<section>
+
+				<!-- Loops explanation-->
+				<section>
+					<h2>Bucles</h2>
+					<p>
+						Sirven para la repetición de acciones mientras dure una determinada condición.
+						Incluyen un bloque de codigo que se ejecutará mientras dicha condición persista.</br>
+						3 tipos:
+					</p>
+					<ul>
+						<li>while</li>
+						<li>do while</li>
+						<li>for</li>
+					</ul>
+				</section>
+
+				<!-- Loops while vs do while 1-->
+				<section>
+					<h2>while vs do while</h2>
+					<p>
+						La principal diferencia consiste en que "while" no llega a ejecutar el bloque de código
+						si la condición no se cumple y "do while" lo ejecuta pero no repite iteración si no se cumple.
+					</p>
+				</section>
+
+				<!-- Loops while vs do while 2-->
+				<section>
+					<h2>while vs do while</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							var numOfCustomers = 10;
+							var textCustomer = 'Texto de while: \n';
+							while (numOfCustomers > 0) {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							}
+							textCustomer += 'Texto de do while: \n';
+							// versus:
+							numOfCustomers = 10;
+							do {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							} while (numOfCustomers > 0);
+							alert(textCustomer);
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var numOfCustomers = 10;
+							var textCustomer = 'Texto de while: \n';
+							while (numOfCustomers > 0) {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							}
+							textCustomer += 'Texto de do while: \n';
+							// versus:
+							numOfCustomers = 10;
+							do {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							} while (numOfCustomers > 0);
+							alert(textCustomer);
+							">Test</a>
+					</p>
+				</section>
+
+				<!-- Loops while vs do while 3-->
+				<section>
+					<h2>while vs do while</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							var numOfCustomers = 10;
+							var textCustomer = 'Texto de while: \n';
+							while (false) {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							}
+							textCustomer += 'Texto de do while: \n';
+							// versus:
+							numOfCustomers = 10;
+							do {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							} while (false);
+							alert(textCustomer);
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var numOfCustomers = 10;
+							var textCustomer = 'Texto de while: \n';
+							while (false) {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							}
+							textCustomer += 'Texto de do while: \n';
+							// versus:
+							numOfCustomers = 10;
+							do {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							} while (false);
+							alert(textCustomer);
+							">Test</a>
+					</p>
+				</section>
+
+				<!-- Loops - for-->
+				<section>
+					<h2>Bucle for</h2>
+					<p>Los bucles for son en esencia bucles while con codiciones de entrada a bucle y de fin de
+						iteración.</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
+							
+							for (var i = 0; i <= 9; i = i + 1) {
+								console.log(i);
+							} // bucle for 0 1 2 3 4 5 6 7 8 9
+							console.log('esto es igual que el siguiente bucle while');
+							var j = 0;
+							while(j <= 9) {
+								console.log(j);
+								j = j + 1;
+							} // 0 1 2 3 4 5 6 7 8 9
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							for (var i = 0; i <= 9; i = i + 1) {
+								console.log(i);
+							}
+							// 	bucle for: 0 1 2 3 4 5 6 7 8 9
+							console.log('esto es igual que el siguiente bucle while');
+							 var j = 0;
+							while(j <= 9) {
+								console.log(j);
+								j = j + 1;
+							} // 0 1 2 3 4 5 6 7 8 9
+							">Test</a>
+					</p>
+					<!--
+						As you can see, in both cases the conditional i <= 9 is true for the
+						first 10 iterations ( i of values 0 through 9 ) of either loop form, but
+						becomes false once i is value 10 .
+	
+						The for loop has three clauses: the initialization clause ( var i=0 ),
+						the conditional test clause ( i <= 9 ), and the update clause ( i = i +
+						1 ). So if you’re going to do counting with your loop iterations, for is
+						a more compact and often easier form to understand and write.
+	
+						There are other specialized loop forms that are intended to iterate
+						over specific values, such as the properties of an object (see Chap‐
+						ter 2) where the implied conditional test is just whether all the prop‐
+						erties have been processed. The “loop until a condition fails”
+						concept holds no matter what the form of the loop
+					-->
+				</section>
+
+
+
+			</section>
 
 
 
