@@ -1229,13 +1229,74 @@
 				<section>
 					<h1>Valores y tipos</h1>
 					<ul>
-						<li>Para operaciones matemáticas: <a>number</a></li>
-						<li>Para imprimir valores en pantalla: <a>string</a></li>
-						<li>Para toma de decisiones: <a>boolean</a></li>
+						<li>string</li>
+						<li>number</li>
+						<li>boolean</li>
+						<li>null and undefined</li>
+						<li>symbol (nuevo de ES6)</li>
+						<li>function</li>
 					</ul>
-
 				</section>
 
+				<!-- Values and types 2-->
+				<section>
+					<h2>Valores y tipos</h2>
+
+					<!-- 
+						El tratar como objeto al tipo null es un bug histórico de javascript que nunca se arreglará.
+						Hay muchas webs 
+					
+					-->
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+						var a;
+						console.log(typeof a); // undefined
+						a = "hello world";
+						console.log(typeof a); // string
+						a = 42;
+						console.log(typeof a); // number
+						a = true;
+						console.log(typeof a); // boolean
+						a = null;
+						console.log(typeof a); // object , bug de javascript por como se comporta null
+						a = undefined;
+						console.log(typeof a); // undefined
+						a = { b: "c" };
+						console.log(typeof a); // object
+						a = function () {
+							return 'a';
+						}
+						console.log(typeof a); // function
+						a = Symbol('a');
+						console.log(typeof a); // symbol
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+						var a;
+						console.log(typeof a); // undefined
+						a = 'hello world';
+						console.log(typeof a); // string
+						a = 42;
+						console.log(typeof a); // number
+						a = true;
+						console.log(typeof a); // boolean
+						a = null;
+						console.log(typeof a); // object , bug de javascript por como se comporta null
+						a = undefined;
+						console.log(typeof a); // undefined
+						a = { b: 'c' };
+						console.log(typeof a); // object
+						a = function () {
+							return 'a';
+						}
+						console.log(typeof a); // function
+						a = Symbol('a');
+						console.log(typeof a); // symbol
+						">Test</a>
+					</p>
+
+				</section>
 			</section>
 
 		</div>
