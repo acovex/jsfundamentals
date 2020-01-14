@@ -610,22 +610,76 @@
 
 			<!-- Code blocks-->
 			<section>
-				<h2>Bloques de código</h2>
-				<p>
-					Cuando necesitamos una serie de operaciones juntas las agrupamos en lo que llamamos
-					bloque.
-					Los bloques estan definidos dentro de un par de llaves { .. }
-				</p>
-				<pre>
-					<code class="javascript" data-trim contenteditable style="font-size: 17px;">
-						var montante = 99.99;
-						// un bloque génerico
-						{
-							montante = montante * 2;
-							console.log( montante ); // 199.98
-						}
-					</code>
-				</pre>
+
+				<!-- Code blocks 1-->
+				<section>
+					<h2>Bloques de código</h2>
+					<p>
+						Cuando necesitamos una serie de operaciones juntas las agrupamos en lo que llamamos
+						bloque.
+						Los bloques estan definidos dentro de un par de llaves { .. }
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							var montante = 99.99;
+							// un bloque génerico
+							{
+								montante = montante * 2;
+								console.log( montante ); // 199.98
+							}
+						</code>
+					</pre>
+				</section>
+
+				<!-- Code blocks 2-->
+				<!-- https://en.wikipedia.org/wiki/JavaScript_syntax#Whitespace_and_semicolons Hablar de esto-->
+				<section>
+					<h2>Problemas con las curly-braces</h2>
+					<p style="font-size: 65%; margin-bottom: 0 !important; padding-bottom: 0 !important;">
+						Si no se colocan bien las curly-braces podemos tener
+						errores debido al conocido como 'semicolon intersection' (cierre automático de
+						sentencias al cambio de lineas).
+					</p>
+
+					<pre style="margin-bottom: 0 !important; margin-top: 0 !important;">
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+						function myFunction() { // test 1
+							return {
+								'status': 'ok'
+							};
+						};
+						console.log(myFunction());
+						function myFunction() { // test 2
+							return 
+							{
+								'status': 'ok'
+							}
+						};
+						console.log(myFunction());
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+						 function myFunction() { // test 1
+							return {
+								'status': 'ok'
+							};
+						};
+						console.log(myFunction());
+							">Test 1</a>
+						<a class="cursor-pointer" onclick="
+						 function myFunction() { // test 2
+							return 
+							{
+								'status': 'ok'
+							}
+						};
+						console.log(myFunction());				
+						">Test 2</a>
+					</p>
+
+				</section>
+
 			</section>
 
 
