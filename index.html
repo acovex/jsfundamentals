@@ -860,12 +860,13 @@
 					<p>
 						Sirven para la repetición de acciones mientras dure una determinada condición.
 						Incluyen un bloque de codigo que se ejecutará mientras dicha condición persista.</br>
-						3 tipos:
+						4 tipos:
 					</p>
 					<ul>
 						<li>while</li>
 						<li>do while</li>
 						<li>for</li>
+						<li>for ... in</li>
 					</ul>
 				</section>
 
@@ -1014,6 +1015,43 @@
 					-->
 				</section>
 
+				<!-- for in-->
+				<section>
+					<h2>bucle for ... in</h2>
+					<p style="font-size: 85%;">El bucle <strong>for ... in</strong> itera sobre las
+						propiedades de un objeto o array
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
+							var miObjeto = {
+								valorPrimero: 4545,
+								valorSegundo: 77885
+							};
+							var miArray = [1212, 455, 5656];
+							for(var nombrePropiedad in miObjeto) {
+								console.log('Objeto propiedad: ' + nombrePropiedad + ', Objeto valor: ' + miObjeto[nombrePropiedad]);
+							}
+							for(var posicionArray in miArray) {
+								console.log('Array posición: ' + posicionArray + ', Array valor: ' + miArray[posicionArray]);
+							}
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var miObjeto = {
+								valorPrimero: 4545,
+								valorSegundo: 77885
+							};
+							var miArray = [1212, 455, 5656];
+							for(var nombrePropiedad in miObjeto) {
+							console.log('Objeto propiedad: ' + nombrePropiedad + ', Objeto valor: ' + miObjeto[nombrePropiedad]);
+							}
+							for(var posicionArray in miArray) {
+								console.log('Array posición: ' + posicionArray + ', Array valor: ' + miArray[posicionArray]);
+							}
+							">Test</a>
+					</p>
+				</section>
 
 
 			</section>
@@ -1283,12 +1321,13 @@
 				<section>
 					<h1>Valores y tipos</h1>
 					<ul>
-						<li>string</li>
-						<li>number</li>
-						<li>boolean</li>
-						<li>null and undefined</li>
+						<li><a class="cursor-pointer">undefined</a></li>
+						<li><a class="cursor-pointer">null</a></li>
+						<li><a class="cursor-pointer">string</a></li>
+						<li><a class="cursor-pointer">number</a></li>
+						<li><a class="cursor-pointer">boolean</a></li>
 						<li>symbol (nuevo de ES6)</li>
-						<li>function</li>
+						<li><a class="cursor-pointer">function</a></li>
 					</ul>
 				</section>
 
@@ -1351,6 +1390,134 @@
 					</p>
 
 				</section>
+
+				<!-- undefined-->
+				<section>
+					<h2>undefined</h2>
+					<p style="font-size: 70%;">
+						El valor de undefined se asigna a todas aquellas variables no inicializadas y también
+						cuando se buscan propiedades de objetos no definidas en el mismo. En contexto de
+						booleanos se considera false.
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							var test;                         // variable declared, but not defined, ...
+									                          // ... set to value of undefined
+							var testObj = {};
+							console.log(test);                // test variable exists, but value not ...
+											                  // ... defined, displays undefined
+							console.log(testObj.myProp);      // testObj exists, property does not, ...
+														      // ... displays undefined
+							console.log(undefined == null);   // unenforced type during check, displays true
+							console.log(undefined === null);  // enforce type during check, displays false
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var test;                         // variable declared, but not defined, ...
+															// ... set to value of undefined
+							var testObj = {};
+							console.log(test);                // test variable exists, but value not ...
+															// ... defined, displays undefined
+							console.log(testObj.myProp);      // testObj exists, property does not, ...
+															// ... displays undefined
+							console.log(undefined == null);   // unenforced type during check, displays true
+							console.log(undefined === null);  // enforce type during check, displays false
+						">Test</a>
+					</p>
+				</section>
+
+
+				<!-- null-->
+				<section>
+					<h2>null</h2>
+					<p style="font-size: 80%;">
+						null es un valor que se ha declarado pero que que su contenido es nulo. En contexto de
+						booleanos también se considera false.<br>
+						Es un valor primitivo pero javascript al mirar su tipo lo considera object.
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							console.log(null == undefined); // unenforced type during check, displays true
+							console.log(null === undefined); // enforce type during check, displays false
+							console.log(typeof null === 'object'); // true
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							console.log(null == undefined); // unenforced type during check, displays true
+							console.log(null === undefined); // enforce type during check, displays false
+							console.log(typeof null === 'object'); // true
+						">Test</a>
+					</p>
+				</section>
+
+				<!-- string 1-->
+				<section>
+					<h2>string</h2>
+					<p style="font-size: 80%;">
+						Un string en javascript es una secuencia de carácteres creada sobre comillas dobles o
+						simples. </br>Tienen que escribirse en la misma linea aunque permite carácteres de
+						escape
+						de línea como \n y de escape de carácteres especiales \
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							var greeting = 'Hello, \n World!';
+							var anotherGreeting = 'Greetings, people of Earth.';
+							var anotherAnotherGreeting = '\'Ultra Greetings\'';
+							console.log(greeting);
+							console.log(anotherGreeting);
+							console.log(anotherAnotherGreeting);
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var greeting = 'Hello, \n World!';
+							var anotherGreeting = 'Greetings, people of Earth.';
+							var anotherAnotherGreeting = '\'Ultra Greetings\'';
+							console.log(greeting);
+							console.log(anotherGreeting);
+							console.log(anotherAnotherGreeting);
+							">Test</a>
+					</p>
+				</section>
+
+				<!-- string 2-->
+				<section>
+					<h2>string</h2>
+					<p style="font-size: 80%;">
+						Un string puede comportarse de manera parecida a un array en algunas ocasiones,
+						lo que permite recorrer sus carácteres pero no cambiar su asignación.
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							var myString = 'abcdefg';
+							for(var positionString in myString) {
+							console.log('Position: ' + positionString + ', value position: ' + myString[positionString]);
+							}
+							console.log(myString.charAt(0));
+							var charPosition0 = myString[0];
+							console.log(charPosition0);
+							myString[0] = 'f'; // esto no tendría ningún efecto
+							console.log(myString);
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var myString = 'abcdefg';
+							for(var positionString in myString) {
+							console.log('Position: ' + positionString + ', value position: ' + myString[positionString]);
+							}
+							console.log(myString.charAt(0));
+							var charPosition0 = myString[0];
+							console.log(charPosition0);
+							myString[0] = 'f'; // esto no tendría ningún efecto
+							console.log(myString);
+											">Test</a>
+					</p>
+				</section>
+
 			</section>
 
 
@@ -1388,13 +1555,13 @@
 								  alert('firstName: ' + this.firstName + ', lastName: ' + this.lastName + ', age:' + this.age + ', eyeColor:' + 	this.eyeColor + ', nationality:' + this.nationality);
 							  }
 							}
-							
 							// Create 2 Person objects
 							var myFather = new Person("John", "Doe", 50, "blue");
 							var myMother = new Person("Sally", "Rally", 48, "green");
 							
 							myFather.seeProperties();
 							myMother.seeProperties();
+							alert(myFather instanceof Person);
 						</code>
 					</pre>
 					<p>
@@ -1420,6 +1587,8 @@
 							
 							myFather.seeProperties();
 							myMother.seeProperties();
+							alert(myFather instanceof Person);
+
 							">Test</a>
 
 					</p>
@@ -1485,7 +1654,7 @@
 					</pre>
 				</section>
 
-				<!-- Whitespace and semicolons 2-->
+				<!-- Whitespace and semicolons 3-->
 				<section>
 					<h2>5 comandos restrictivos. Ej:</h2>
 					<pre>
