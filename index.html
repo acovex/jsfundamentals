@@ -271,7 +271,7 @@
 				<section>
 					<h2>Operadores de asignación compuesta</h2>
 
-					<p>
+					<p class="justify">
 						Son operadores compuestos, primero realizan la operación matemática y luego la
 						asignación.
 					</p>
@@ -303,7 +303,7 @@
 				<section>
 					<h2>Operadores de incrementar decrecer</h2>
 
-					<p>
+					<p class="justify">
 						Para facilitar la adición o decrecimiento de valor 1. Operación más asignación.
 					</p>
 
@@ -1074,11 +1074,11 @@
 					yourself repetitiously (pun intended!). The way to do this is to
 					define a function
 				-->
-					<p>
+					<p class="justify">
 						Una función es una porción de código que puede ser llamada y que cada vez que
 						se hace ejecuta el código en su interior.
 					</p>
-					<p>
+					<p class="justify">
 						Conviene usarlas para evitar duplicidad de código de
 						tareas repetitivas que se puedan abstraer.
 					</p>
@@ -1093,7 +1093,8 @@
 						Explicación funciones. 
 						Decir que puede llamarse aunque se defina más abajo
 					-->
-					<p>Las funciones pueden llamarse mientras estén definidas en el mismo scope</p>
+					<p class="justify">Las funciones pueden llamarse mientras estén definidas en el mismo
+						scope</p>
 					<pre>
 						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
 							printAmount();
@@ -1131,10 +1132,11 @@
 						Explicación funciones. 
 						Decir que puede llamarse aunque se defina más abajo
 					-->
-					<p>Se les pueden pasar parámtros a las funciones, incluso otras funciones</p>
+					<p class="justify">Se les pueden pasar parámtros a las funciones, incluso otras funciones
+					</p>
 					<pre>
 						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
-							const TAX_RATE = 0.08;
+							var TAX_RATE = 0.08;
 							function calculateFinalPurchaseAmount(amt) {
 								// calcula el montante con los impuestos
 								amt = amt + (amt * TAX_RATE);
@@ -1149,7 +1151,7 @@
 					</pre>
 					<p>
 						<a class="cursor-pointer" onclick="
-							const TAX_RATE = 0.08;
+							var TAX_RATE = 0.08;
 							function calculateFinalPurchaseAmount(amt) {
 								// calcula el montante con los impuestos
 								amt = amt + (amt * TAX_RATE);
@@ -1175,7 +1177,7 @@
 					-->
 					<pre>
 						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
-							const TAX_RATE = 0.08;
+							var TAX_RATE = 0.08;
 							function calculateFinalPurchaseAmount(amt, functionAmt) {
 								// Ejecuamos la función que se le ha pasado como parámetro
 								return functionAmt(amt);
@@ -1189,7 +1191,7 @@
 					</pre>
 					<p>
 						<a class="cursor-pointer" onclick="
-							const TAX_RATE = 0.08;
+							var TAX_RATE = 0.08;
 							function calculateFinalPurchaseAmount(amt, functionAmt) {
 								// Ejecuamos la función que se le ha pasado como parámetro
 								return functionAmt(amt);
@@ -1321,13 +1323,14 @@
 				<section>
 					<h1>Valores y tipos</h1>
 					<ul>
-						<li><a class="cursor-pointer">undefined</a></li>
-						<li><a class="cursor-pointer">null</a></li>
-						<li><a class="cursor-pointer">string</a></li>
-						<li><a class="cursor-pointer">number</a></li>
-						<li><a class="cursor-pointer">boolean</a></li>
+						<li><a href="#/11/2" class="cursor-pointer">undefined</a></li>
+						<li><a href="#/11/2" class="cursor-pointer">null</a></li>
+						<li><a href="#/11/2" class="cursor-pointer">string</a></li>
+						<li><a href="#/11/2" class="cursor-pointer">number</a></li>
+						<li><a href="#/11/2" class="cursor-pointer">boolean</a></li>
 						<li>symbol (nuevo de ES6)</li>
-						<li><a class="cursor-pointer">function</a></li>
+						<li href="#/11/2"><a class="cursor-pointer">object</a></li>
+						<li href="#/11/2"><a class="cursor-pointer">function</a></li>
 					</ul>
 				</section>
 
@@ -1394,7 +1397,7 @@
 				<!-- undefined-->
 				<section>
 					<h2>undefined</h2>
-					<p style="font-size: 70%;">
+					<p style="font-size: 70%;" class="justify">
 						El valor de undefined se asigna a todas aquellas variables no inicializadas y también
 						cuando se buscan propiedades de objetos no definidas en el mismo. En contexto de
 						booleanos se considera false.
@@ -1431,7 +1434,7 @@
 				<!-- null-->
 				<section>
 					<h2>null</h2>
-					<p style="font-size: 80%;">
+					<p style="font-size: 80%;" class="justify">
 						null es un valor que se ha declarado pero que que su contenido es nulo. En contexto de
 						booleanos también se considera false.<br>
 						Es un valor primitivo pero javascript al mirar su tipo lo considera object.
@@ -1455,7 +1458,7 @@
 				<!-- string 1-->
 				<section>
 					<h2>string</h2>
-					<p style="font-size: 80%;">
+					<p style="font-size: 80%;" class="justify">
 						Un string en javascript es una secuencia de carácteres creada sobre comillas dobles o
 						simples. </br>Tienen que escribirse en la misma linea aunque permite carácteres de
 						escape
@@ -1486,7 +1489,7 @@
 				<!-- string 2-->
 				<section>
 					<h2>string</h2>
-					<p style="font-size: 80%;">
+					<p style="font-size: 80%;" class="justify">
 						Un string puede comportarse de manera parecida a un array en algunas ocasiones,
 						lo que permite recorrer sus carácteres pero no cambiar su asignación.
 					</p>
@@ -1522,7 +1525,8 @@
 				<section>
 
 					<h2>number</h2>
-					<p style="font-size: 70%;">Number en javascript proporciona una precisión de 16 decimales.
+					<p style="font-size: 70%;" class="justify">Number en javascript proporciona una precisión
+						de 16 decimales.
 						</br>
 						Al haber coma flotante (flotating point) pueden haber errores en ciertas operaciones
 						aritméticas con decimales
@@ -1612,7 +1616,7 @@
 				<!-- conversiones de tipo -->
 				<section>
 					<h3>boolean: Conversiones de tipo automáticas al comparar</h3>
-					<p style="font-size: 70%;">
+					<p style="font-size: 70%;" class="justify">
 						A nivel interno, Javascript realiza las siguientes conversiones de tipo automática en
 						comparaciones
 					</p>
@@ -1858,6 +1862,8 @@
 			progress: true,
 			center: true,
 			hash: true,
+			mouseWheel: true,
+			width: '90%',
 
 			transition: 'slide', // none/fade/slide/convex/concave/zoom
 

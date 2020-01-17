@@ -1,5 +1,5 @@
 img[alt="Title"] {
-    width: 38%;
+    width: 30%;
 }
 
 .blue {
@@ -38,4 +38,25 @@ img[alt="Title"] {
 
 .f-s-25p {
     font-size: 25px;
+}
+
+section>p.justify {
+    text-align: justify;
+}
+
+body {
+    background: url('../img/wallpaper.jpg');
+    background-size: cover;
+    /* the following are for firefox 70 */
+    opacity: 1;
+    z-index: 1;
+}
+
+@media print {
+    .backgrounds {
+        background: url('../img/wallpaper.jpg');
+        /* if you used "cover" on screen,
+		 * you will probably want "contains" on print */
+        background-size: contain;
+    }
 }
