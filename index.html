@@ -16,7 +16,7 @@
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/league.css" id="theme">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
 	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Theme used for syntax highlighting of code -->
@@ -1515,6 +1515,176 @@
 							myString[0] = 'f'; // esto no tendría ningún efecto
 							console.log(myString);
 											">Test</a>
+					</p>
+				</section>
+
+				<!-- number 1-->
+				<section>
+
+					<h2>number</h2>
+					<p style="font-size: 70%;">Number en javascript proporciona una precisión de 16 decimales.
+						</br>
+						Al haber coma flotante (flotating point) pueden haber errores en ciertas operaciones
+						aritméticas con decimales
+						por lo que no se recomienda hacer operaciones matemáticas complejas en javascript
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							alert(0.94 - 0.01);
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							alert(0.94 - 0.01);">Test</a>
+					</p>
+
+				</section>
+
+				<!-- number 2-->
+				<section>
+
+					<h2>number</h2>
+					<p style="font-size: 70%;">
+						Hay distintas maneras de representar un number en Javascript
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							345; // un "integer", a pesar de que solo hay un tipo numérico en Javascript
+							34.5; // un número con coma flotante
+							3.45e2; // otro número con coma flotante, que equivale a 345
+							0b1011; //un binary integer que vale 11
+							0o377; // un octal integer que equivale a 255
+							0xFF; // un hexadecimal integer que equivale a 255, los digitos reprensentados por ...
+							// ... las letras A-F puden ser upper o lowercase
+
+							Infinity; // posible infinito Ej.: 5/0
+							NaN; // Not-A-Number value, devuelto como error en conversiones de string a number
+
+							typeof Infinity; // returns "number"
+							typeof NaN; // returns "number"
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							console.log(345); // un 'integer', a pesar de que solo hay un tipo numérico en Javascript
+							console.log(34.5); // un número con coma flotante
+							console.log(3.45e2); // otro número con coma flotante, que equivale a 345
+							console.log(0b1011); //un binary integer que vale 11
+							console.log(0o377); // un octal integer que equivale a 255
+							console.log(0xFF); // un hexadecimal integer que equivale a 255, los digitos reprensentados por ...
+							// ... las letras A-F puden ser upper o lowercase
+
+							console.log(5/0);
+							Infinity; // posible infinito Ej.: 5/0
+							console.log(NaN);
+							NaN; // Not-A-Number value, devuelto como error en conversiones de string a number
+
+							console.log(typeof Infinity);
+							typeof Infinity; // returns 'number'
+							console.log(typeof NaN);
+							typeof NaN; // returns 'number'
+						
+						">Test</a>
+					</p>
+
+				</section>
+
+				<!-- boolean -->
+				<section>
+					<h2>boolean</h2>
+					<ul>
+						<li>Javascript tiene por booleano los literales true y false.</li>
+						<li>En contexto lógico tipo if, while, etc... por conversión de tipos son considerados
+							booleanos:
+							<ul>
+								<li><span class="red">false</span>: <strong> 0, -0, null, NaN, undefined
+										y '' (string de
+										cadena vacia)</strong><br></li>
+								<li><span class="green">true</span>: <strong>Todos los demás, incluyendo '0' y
+										'false' (estos
+										como string)</strong></li>
+							</ul>
+						</li>
+					</ul>
+
+				</section>
+
+				<!-- conversiones de tipo -->
+				<section>
+					<h3>boolean: Conversiones de tipo automáticas al comparar</h3>
+					<p style="font-size: 70%;">
+						A nivel interno, Javascript realiza las siguientes conversiones de tipo automática en
+						comparaciones
+					</p>
+					<ul>
+						<li><span class="green">number and string</span>: Intenta convertir el string a su
+							valor númerico más cercano y luego lo redondea a su valor numérico más cercano
+						</li>
+						<li><span class="green">boolean</span>: Si uno de los datos a comparar es boolean se
+							convierte en 1 si es true o 0 si es false
+						</li>
+						<li><span class="green">object</span>: Si un objeto es comparado con un string o
+							number, el objeto se convierte en un string o number primitivo antes de compararse
+						</li>
+					</ul>
+				</section>
+
+				<!-- conversiones de tipo -->
+				<section>
+					<h4>boolean: Conversiones de tipo automáticas al comparar</h4>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+						// Conversion automatica
+						console.log(true == 2 ); // false... true → 1 !== 2 ← 2
+						console.log(false == 2 ); // false... false → 0 !== 2 ← 2
+						console.log(true == 1 ); // true.... true → 1 === 1 ← 1
+						console.log(false == 0 ); // true.... false → 0 === 0 ← 0
+						console.log(true == "2"); // false... true → 1 !== 2 ← "2"
+						console.log(false == "2"); // false... false → 0 !== 2 ← "2"
+						console.log(true == "1"); // true.... true → 1 === 1 ← "1"
+						console.log(false == "0"); // true.... false → 0 === 0 ← "0"
+						console.log(false == "" ); // true.... false → 0 === 0 ← ""
+						console.log(false == NaN); // false... false → 0 !== NaN
+
+						console.log(NaN == NaN); // false...... NaN es el único no equivalente a nada, incluso NaN.
+
+						// comparación con tipo (no hay conversión de tipos y valores)
+						console.log(true === 1); // false...... los tipos no coinciden
+
+						// Forzando conversión de tipo
+						console.log(true === !!2); // true.... los tipos y valores coinciden
+						console.log(true === !!0); // false... los tipos coinciden pero los valores no
+						console.log( 1 ? true : false); // true.... solo ±0 y NaN son “falsy” numbers
+						console.log("0" ? true : false); // true.... en string solo carácter vacio es “falsy”
+						console.log(Boolean({})); // true.... todos los objetos son “truthy”
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+						// Conversion automatica
+						console.log(true == 2 ); // false... true → 1 !== 2 ← 2
+						console.log(false == 2 ); // false... false → 0 !== 2 ← 2
+						console.log(true == 1 ); // true.... true → 1 === 1 ← 1
+						console.log(false == 0 ); // true.... false → 0 === 0 ← 0
+						console.log(true == '2'); // false... true → 1 !== 2 ← '2'
+						console.log(false == '2'); // false... false → 0 !== 2 ← '2'
+						console.log(true == '1'); // true.... true → 1 === 1 ← '1'
+						console.log(false == '0'); // true.... false → 0 === 0 ← '0'
+						console.log(false == ''); // true.... false → 0 === 0 ← ''
+						console.log(false == NaN); // false... false → 0 !== NaN
+
+						console.log(NaN == NaN); // false...... NaN is not equivalent to anything, including NaN.
+
+						// Type checked comparison (no conversion of types and values)
+						console.log(true === 1); // false...... data types do not match
+
+						// Explicit type coercion
+						console.log(true === !!2); // true.... data types and values match
+						console.log(true === !!0); // false... data types match, but values differ
+						console.log( 1 ? true : false); // true.... only ±0 and NaN are “falsy” numbers
+						console.log('0' ? true : false); // true.... only the empty string is “falsy”
+						console.log(Boolean({})); // true.... all objects are “truthy”
+						">Test</a>
 					</p>
 				</section>
 
