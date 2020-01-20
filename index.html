@@ -115,8 +115,7 @@
 					</pre>
 					<p>
 						<a class="cursor-pointer">
-							<img width="178" height="238"
-								onclick="console.log('string de salida por consola')"
+							<img width="178" height="238" onclick="console.log('string de salida por consola')"
 								data-src="./img/arrow.png" alt="consoleOutput"
 								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
 						</a>
@@ -146,7 +145,7 @@
 									alert('Ten viajero, toma tu toalla');
 								} else {
 									alert('No sabes nada Juan de las nieves');
-								}" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="promptInput"
+								}" data-src="./img/arrow.png" alt="promptInput"
 								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
 						</a>
 					</p>
@@ -176,11 +175,59 @@
 				<!--variables 1-->
 				<section>
 					<h2>Variables</h2>
+					<br style="font-size: 70%;">
+					En JavaScript las variables no tienen asociación de tipo en su definición.</br>
+					El nombre de variable tiene que empezar por a - z , A - Z , $ , o _ . En su contenido puede
+					tener estos además de números 0-9.</br>
+					No se pueden utilizar palabras reservadas para nombres de variables ( for , in , if , etc)
+					</p>
+					<ul>
+						<li><span class="green">var</span> (JavaScript vanilla)</li>
+						<li><span class="green">let</span> (ECMAScript6)</li>
+						<li><span class="green">const</span> (ECMAScript6)</li>
+					</ul>
 				</section>
 
 				<!--variables 2-->
 				<section>
-					<h2></h2>
+					<h2>Variables</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							var variable1 = 'Esta es mi variable';
+							let _variable2 = 45;
+							const $variable3 = {
+								propiedad1: 12,
+								propiedad2: 'esto es la propiedad 2'
+							};
+							variable1 = 23;
+							_variable2 = 'le cambio el nombre';
+							$variable3.nuevaPropiedad = 'esto si podemos hacerlo';
+							console.log(variable1, _variable2, $variable3);
+
+							$variable3 = {
+								nuevaPropiedad: 'esto no se puede hacer'
+							};
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var variable1 = 'Esta es mi variable';
+							let _variable2 = 45;
+							const $variable3 = {
+								propiedad1: 12,
+								propiedad2: 'esto es la propiedad 2'
+							};
+							variable1 = 23;
+							_variable2 = 'le cambio el nombre';
+							$variable3.nuevaPropiedad = 'esto si podemos hacerlo';
+							console.log(variable1, _variable2, $variable3);
+
+							$variable3 = {
+								nuevaPropiedad: 'esto no se puede hacer'
+							};
+							">Test</a>
+
+					</p>
 				</section>
 
 			</section>
@@ -190,24 +237,24 @@
 				<h2>Tipos de comentarios en el código</h2>
 
 				<pre>
-								<code class="javascript" data-trim contenteditable style="font-size: 17px;">
-									// Esto es un comentario en linea única
-			
-									/* Esto es  un comentario
-										en varias 
-											lineas
-									*/
-									var a = 42; // 42 es el sentido de la vida
-			
-									/* El siguente valor va a ser este 
-									porque se ha visto que responde a 
-									cada pregunta en el universo. */
-									var a = 42;
-			
-									var a = /* valor arbitrario */ 42;
-									console.log( a ); // 42
-								</code>
-							</pre>
+					<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+						// Esto es un comentario en linea única
+
+						/* Esto es  un comentario
+							en varias 
+								lineas
+						*/
+						var a = 42; // 42 es el sentido de la vida
+
+						/* El siguente valor va a ser este 
+						porque se ha visto que responde a 
+						cada pregunta en el universo. */
+						var a = 42;
+
+						var a = /* valor arbitrario */ 42;
+						console.log( a ); // 42
+					</code>
+				</pre>
 
 			</section>
 
@@ -249,7 +296,7 @@
 									a = true;
 									console.log(typeof a); // boolean
 									a = null;
-									console.log(typeof a); // object , bug de javascript por como se comporta null
+									console.log(typeof a); // object , bug de JavaScript por como se comporta null
 									a = undefined;
 									console.log(typeof a); // undefined
 									a = { b: "c" };
@@ -273,7 +320,7 @@
 									a = true;
 									console.log(typeof a); // boolean
 									a = null;
-									console.log(typeof a); // object , bug de javascript por como se comporta null
+									console.log(typeof a); // object , bug de JavaScript por como se comporta null
 									a = undefined;
 									console.log(typeof a); // undefined
 									a = { b: 'c' };
@@ -332,7 +379,7 @@
 					<p style="font-size: 80%;" class="justify">
 						null es un valor que se ha declarado pero que que su contenido es nulo. En contexto de
 						booleanos también se considera false.<br>
-						Es un valor primitivo pero javascript al mirar su tipo lo considera object.
+						Es un valor primitivo pero JavaScript al mirar su tipo lo considera object.
 					</p>
 					<pre>
 									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
@@ -420,12 +467,12 @@
 				<section>
 
 					<h2>number</h2>
-					<p style="font-size: 70%;" class="justify">Number en javascript proporciona una precisión
+					<p style="font-size: 70%;" class="justify">Number en JavaScript proporciona una precisión
 						de 16 decimales.
 						</br>
 						Al haber coma flotante (flotating point) pueden haber errores en ciertas operaciones
 						aritméticas con decimales
-						por lo que no se recomienda hacer operaciones matemáticas complejas en javascript
+						por lo que no se recomienda hacer operaciones matemáticas complejas en JavaScript
 					</p>
 					<pre>
 									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
@@ -444,11 +491,11 @@
 
 					<h2>number</h2>
 					<p style="font-size: 70%;">
-						Hay distintas maneras de representar un number en Javascript
+						Hay distintas maneras de representar un number en JavaScript
 					</p>
 					<pre>
 									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
-										345; // un "integer", a pesar de que solo hay un tipo numérico en Javascript
+										345; // un "integer", a pesar de que solo hay un tipo numérico en JavaScript
 										34.5; // un número con coma flotante
 										3.45e2; // otro número con coma flotante, que equivale a 345
 										0b1011; //un binary integer que vale 11
@@ -465,7 +512,7 @@
 								</pre>
 					<p>
 						<a class="cursor-pointer" onclick="
-										console.log(345); // un 'integer', a pesar de que solo hay un tipo numérico en Javascript
+										console.log(345); // un 'integer', a pesar de que solo hay un tipo numérico en JavaScript
 										console.log(34.5); // un número con coma flotante
 										console.log(3.45e2); // otro número con coma flotante, que equivale a 345
 										console.log(0b1011); //un binary integer que vale 11
@@ -492,7 +539,7 @@
 				<section>
 					<h2>boolean</h2>
 					<ul>
-						<li>Javascript tiene por booleano los literales true y false.</li>
+						<li>JavaScript tiene por booleano los literales true y false.</li>
 						<li>En contexto lógico tipo if, while, etc... por conversión de tipos son considerados
 							booleanos:
 							<ul>
@@ -512,7 +559,7 @@
 				<section>
 					<h3>boolean: Conversiones de tipo automáticas al comparar</h3>
 					<p style="font-size: 70%;" class="justify">
-						A nivel interno, Javascript realiza las siguientes conversiones de tipo automática en
+						A nivel interno, JavaScript realiza las siguientes conversiones de tipo automática en
 						comparaciones
 					</p>
 					<ul>
@@ -759,7 +806,7 @@
 					<h1>Operadores</h1>
 					<!--
 									Ya hemos visto los operadores = y *. 
-									En javascript primero se calcula el valor de los operandos y luego se asigna.
+									En JavaScript primero se calcula el valor de los operandos y luego se asigna.
 									Se tienen que declaran primero las variables si no no se pueden operador con ellas.
 									Se tiene que declaran primero las variables antes de usarlas.
 								-->
@@ -855,8 +902,7 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeMatemáticos"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeMatemáticos" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -886,8 +932,7 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -911,8 +956,7 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -999,8 +1043,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer"
-										onclick="alert('false === 0 : ' + (false === 0))">
+									<a class="cursor-pointer" onclick="alert('false === 0 : ' + (false === 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -1057,8 +1100,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer"
-										onclick="alert('false !== 0 : ' + (false !== 0))">
+									<a class="cursor-pointer" onclick="alert('false !== 0 : ' + (false !== 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -1069,8 +1111,7 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeDesIgualdad"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeDesIgualdad" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -1116,8 +1157,7 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeComparacion"
-								data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeComparacion" data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -1151,14 +1191,12 @@
 							<strong class="yellow">|| (or)</strong>
 							<ul>
 								<li>
-									<a class="cursor-pointer"
-										onclick="var a = 3; var b = null; alert(a || b)">
+									<a class="cursor-pointer" onclick="var a = 3; var b = null; alert(a || b)">
 										var a = 3; var b = null; alert(a || b);
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer"
-										onclick="var a = null; var b = 5; alert(a || b)">
+									<a class="cursor-pointer" onclick="var a = null; var b = 5; alert(a || b)">
 										var a = null; var b = 5; alert(a || b);
 									</a>
 								</li>
@@ -1202,10 +1240,10 @@
 					</p>
 					<p>
 						<form>
-							<span style="font-size: 50%;">Dinero total en el banco:</span> <input
-								type="number" value=100 name="totalBanco" id="totalBanco"><br>
-							<span style="font-size: 50%;">Precio del producto:</span> <input type="number"
-								value=50 name="precioProducto" id="precioProducto">
+							<span style="font-size: 50%;">Dinero total en el banco:</span> <input type="number"
+								value=100 name="totalBanco" id="totalBanco"><br>
+							<span style="font-size: 50%;">Precio del producto:</span> <input type="number" value=50
+								name="precioProducto" id="precioProducto">
 						</form>
 					</p>
 					<p>
@@ -1268,16 +1306,13 @@
 							<span>Color del pitufo</span><br>
 							<input type="hidden" id="colorRealPitufo" name="colorRealPitufo" value="azul">
 							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoAzul"
-								value="azul"><label class="cursor-pointer" for="pitufoAzul"
-								style="font-size: 50%;">Azul
+								value="azul"><label class="cursor-pointer" for="pitufoAzul" style="font-size: 50%;">Azul
 							</label>
 							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoRojo"
-								value="rojo"><label class="cursor-pointer" for="pitufoRojo"
-								style="font-size: 50%;">Rojo
+								value="rojo"><label class="cursor-pointer" for="pitufoRojo" style="font-size: 50%;">Rojo
 							</label>
-							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoVerde"
-								value="verde" checked><label class="cursor-pointer" for="pitufoVerde"
-								style="font-size: 50%;">Verde
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoVerde" value="verde"
+								checked><label class="cursor-pointer" for="pitufoVerde" style="font-size: 50%;">Verde
 							</label>
 							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoAmarillo"
 								value="amarillo" checked><label class="cursor-pointer" for="pitufoAmarillo"
@@ -1831,7 +1866,7 @@
 					<h2>arrays</h2>
 					<ul>
 						<li>Son coleccioniones de cualquier tipo, incluso dentro de la misma colección</li>
-						<li>Javascript los considera de tipo object porque realmente es un objeto prototipado
+						<li>JavaScript los considera de tipo object porque realmente es un objeto prototipado
 							con Array
 							como constructor y con métodos especificamente diseñados para ayudar al
 							programador</li>
@@ -1886,7 +1921,7 @@
 
 				<!-- arrays 3-->
 				<section>
-					<h2>arrays: métodos en vanilla Javascript</h2>
+					<h2>arrays: métodos en vanilla JavaScript</h2>
 					<ul>
 						<li>Considerando var miArray = ['primero','segundo','tercero','cuarto'];</li>
 						<li>miArray<span class="green">.length</span> : Devuelve el número total de elementos
@@ -1894,8 +1929,8 @@
 						</li>
 						<li>miArray<span class="green">.push(</span>nuevoElem<span class="green">)</span>:
 							Añade un elemento al final del array</li>
-						<li>miArray<span class="green">.pop(): Elimina el último elemento del array</li>
-						<li>miArray<span class="green">.shift(): Elimina el primer elemento del array</li>
+						<li>miArray<span class="green">.pop()</span>: Elimina el último elemento del array</li>
+						<li>miArray<span class="green">.shift()</span>: Elimina el primer elemento del array</li>
 						<li>miArray<span class="green">.unshift(</span>nuevoElem<span class="green">)</span>:
 							Añade un elemento al principio del array</li>
 					</ul>
@@ -1977,7 +2012,7 @@
 
 				<!-- object constructor 3-->
 				<section>
-					<h3>Constructor en Javascript vanilla: this</h3>
+					<h3>Constructor en JavaScript vanilla: this</h3>
 					<ul>
 						<li>this dentro de su scope contiene su "propio" codigo</li>
 						<li>El valor de this cuando se usa en un objeto es el mismo</li>
