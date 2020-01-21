@@ -115,7 +115,8 @@
 					</pre>
 					<p>
 						<a class="cursor-pointer">
-							<img width="178" height="238" onclick="console.log('string de salida por consola')"
+							<img width="178" height="238"
+								onclick="console.log('string de salida por consola')"
 								data-src="./img/arrow.png" alt="consoleOutput"
 								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
 						</a>
@@ -160,11 +161,30 @@
 				<!--historia 1-->
 				<section>
 					<h2>Un poco de historia...</h2>
+					<ul>
+						<li>Creado en 1995 por Brendan Eich inicialmente con el
+							nombre Mocha, en Netscape</li>
+						<li>En 1997 los autores propusieron llamarlo JavaScript
+							para que fuera adoptado como estándar por la
+							European Computer Manufacturers Association (ECMA)</li>
+						<li>ECMAScript (1996): Especificación de lenguaje de
+							programación. Basado en JavaScript</li>
+						<li>Distintas actualizaciones durante los siguientes años siendo las más importantes
+							las de a partir de 2015
+						</li>
+					</ul>
 				</section>
 
 				<!--historia 2-->
 				<section>
-					<h2></h2>
+					<h2>Actualizaciones de JavaScript</h2>
+					<ul>
+						<li>Junio 2015 - ECMAScript 6 - ECMAScript 2015 (cambios muy grandes)</li>
+						<li>Junio 2016 - ECMAScript 2016</li>
+						<li>Junio 2017 - ECMAScript 2017</li>
+						<li>Junio 2018 - ECMAScript 2018</li>
+						<li>Junio 2019 - ECMAScript 2019</li>
+					</ul>
 				</section>
 
 			</section>
@@ -175,11 +195,13 @@
 				<!--variables 1-->
 				<section>
 					<h2>Variables</h2>
-					<br style="font-size: 70%;">
-					En JavaScript las variables no tienen asociación de tipo en su definición.</br>
-					El nombre de variable tiene que empezar por a - z , A - Z , $ , o _ . En su contenido puede
-					tener estos además de números 0-9.</br>
-					No se pueden utilizar palabras reservadas para nombres de variables ( for , in , if , etc)
+					<p style="font-size: 70%;">
+						En JavaScript las variables no tienen asociación de tipo en su definición.<br>
+						El nombre de variable tiene que empezar por a - z , A - Z , $ , o _ . En su contenido
+						puede
+						tener estos además de números 0-9.</br>
+						No se pueden utilizar palabras reservadas para nombres de variables ( for , in , if ,
+						etc)
 					</p>
 					<ul>
 						<li><span class="green">var</span> (JavaScript vanilla)</li>
@@ -902,7 +924,8 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeMatemáticos" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeMatemáticos"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -932,7 +955,8 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -956,7 +980,8 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -1043,7 +1068,8 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer" onclick="alert('false === 0 : ' + (false === 0))">
+									<a class="cursor-pointer"
+										onclick="alert('false === 0 : ' + (false === 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -1100,7 +1126,8 @@
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer" onclick="alert('false !== 0 : ' + (false !== 0))">
+									<a class="cursor-pointer"
+										onclick="alert('false !== 0 : ' + (false !== 0))">
 										alert('false === 0 : ' + (false === 0));
 									</a>
 								</li>
@@ -1111,7 +1138,8 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeDesIgualdad" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeDesIgualdad"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -1157,7 +1185,8 @@
 					</ul>
 					<p>
 						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
-							<img width="80" height="80" alt="volverDesdeComparacion" data-src="./img/arrow.png"
+							<img width="80" height="80" alt="volverDesdeComparacion"
+								data-src="./img/arrow.png"
 								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
 						</a>
 					</p>
@@ -1191,12 +1220,14 @@
 							<strong class="yellow">|| (or)</strong>
 							<ul>
 								<li>
-									<a class="cursor-pointer" onclick="var a = 3; var b = null; alert(a || b)">
+									<a class="cursor-pointer"
+										onclick="var a = 3; var b = null; alert(a || b)">
 										var a = 3; var b = null; alert(a || b);
 									</a>
 								</li>
 								<li>
-									<a class="cursor-pointer" onclick="var a = null; var b = 5; alert(a || b)">
+									<a class="cursor-pointer"
+										onclick="var a = null; var b = 5; alert(a || b)">
 										var a = null; var b = 5; alert(a || b);
 									</a>
 								</li>
@@ -1240,10 +1271,10 @@
 					</p>
 					<p>
 						<form>
-							<span style="font-size: 50%;">Dinero total en el banco:</span> <input type="number"
-								value=100 name="totalBanco" id="totalBanco"><br>
-							<span style="font-size: 50%;">Precio del producto:</span> <input type="number" value=50
-								name="precioProducto" id="precioProducto">
+							<span style="font-size: 50%;">Dinero total en el banco:</span> <input
+								type="number" value=100 name="totalBanco" id="totalBanco"><br>
+							<span style="font-size: 50%;">Precio del producto:</span> <input type="number"
+								value=50 name="precioProducto" id="precioProducto">
 						</form>
 					</p>
 					<p>
@@ -1306,13 +1337,16 @@
 							<span>Color del pitufo</span><br>
 							<input type="hidden" id="colorRealPitufo" name="colorRealPitufo" value="azul">
 							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoAzul"
-								value="azul"><label class="cursor-pointer" for="pitufoAzul" style="font-size: 50%;">Azul
+								value="azul"><label class="cursor-pointer" for="pitufoAzul"
+								style="font-size: 50%;">Azul
 							</label>
 							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoRojo"
-								value="rojo"><label class="cursor-pointer" for="pitufoRojo" style="font-size: 50%;">Rojo
+								value="rojo"><label class="cursor-pointer" for="pitufoRojo"
+								style="font-size: 50%;">Rojo
 							</label>
-							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoVerde" value="verde"
-								checked><label class="cursor-pointer" for="pitufoVerde" style="font-size: 50%;">Verde
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoVerde"
+								value="verde" checked><label class="cursor-pointer" for="pitufoVerde"
+								style="font-size: 50%;">Verde
 							</label>
 							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoAmarillo"
 								value="amarillo" checked><label class="cursor-pointer" for="pitufoAmarillo"
@@ -1929,8 +1963,10 @@
 						</li>
 						<li>miArray<span class="green">.push(</span>nuevoElem<span class="green">)</span>:
 							Añade un elemento al final del array</li>
-						<li>miArray<span class="green">.pop()</span>: Elimina el último elemento del array</li>
-						<li>miArray<span class="green">.shift()</span>: Elimina el primer elemento del array</li>
+						<li>miArray<span class="green">.pop()</span>: Elimina el último elemento del array
+						</li>
+						<li>miArray<span class="green">.shift()</span>: Elimina el primer elemento del array
+						</li>
 						<li>miArray<span class="green">.unshift(</span>nuevoElem<span class="green">)</span>:
 							Añade un elemento al principio del array</li>
 					</ul>
