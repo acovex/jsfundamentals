@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/monokai.css">
@@ -42,9 +43,2084 @@
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
 
-			<section data-markdown>
+			<!-- Title-->
+			<section data-markdown="slides/title/title.md">
+			</section>
+
+			<!--Statements-->
+			<section>
+				<!--Statements 1-->
+				<section data-markdown="slides/statements/statements1.md">
+				</section>
+
+				<!--Statements 2-->
+				<section>
+					<p class="largue"><span class="blue">a</span> <span class="green">=</span>
+						<span class="blue">b</span>
+						<span class="green">*</span> <span class="yellow">2</span> </p>
+					<p>
+						<ul>
+							<li class="fragment fade-up"><span class="blue">a b</span>: Son variables, sirven
+								para almacenar datos de
+								manera
+								temporal</li>
+							<li class="fragment fade-up"><span class="green">= *</span>: Son opereadores,
+								sirven para realizar acciones
+								sobre
+								variables o datos estáticos, en este caso asignación el = y operación
+								aritmética el *
+							</li>
+							<li class="fragment fade-up"><span class="yellow">2</span>: Es un valor literal,
+								no esta almacenado en
+								variable</li>
+						</ul>
+					</p>
+				</section>
+
+			</section>
+
+			<!-- Expressions-->
+			<section>
+
+				<!-- Expressions 1-->
+				<section data-markdown="slides/expressions/expressions1.md">
+				</section>
+
+				<!-- Expressions 2-->
+				<section data-markdown="slides/expressions/expressions2.md">
+				</section>
+
+				<!-- Expressions 3-->
+				<section data-markdown="slides/expressions/expressions3.md">
+				</section>
+
+				<!-- Expressions 4-->
+				<section data-markdown="slides/expressions/expressions4.md">
+				</section>
+
+			</section>
+
+			<!-- Pruebas 1-->
+			<section>
+				<!-- Pruebas 1 output-->
+				<section>
+					<h1>Pruebas</h1>
+					<p>
+						Ejemplo de output
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 18px;">
+									console.log('string de salida por consola');
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer">
+							<img width="178" height="238"
+								onclick="console.log('string de salida por consola')"
+								data-src="./img/arrow.png" alt="consoleOutput"
+								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
+						</a>
+					</p>
+				</section>
+
+				<!-- Pruebas 2 input-->
+				<section>
+					<p>
+						Ejemplo de input
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 18px;">
+									var sentido = prompt('El sentido de la vida es: ');
+									if(sentido === '42') {
+										console.log('Ten viajero, toma tu toalla');
+									} else {
+										console.log('No sabes nada Juan de las nieves');
+									}
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer">
+							<img width="148" height="208" onclick="
+								var sentido = prompt('El sentido de la vida es: ');
+								if(sentido === '42') {
+									alert('Ten viajero, toma tu toalla');
+								} else {
+									alert('No sabes nada Juan de las nieves');
+								}" data-src="./img/arrow.png" alt="promptInput"
+								style="transform: rotate(360deg); -webkit-transform: rotate(360);">
+						</a>
+					</p>
+					</br>
+				</section>
+
+			</section>
+
+			<!-- historia-->
+			<section>
+
+				<!--historia 1-->
+				<section>
+					<h2>Un poco de historia...</h2>
+					<ul>
+						<li>Creado en 1995 por Brendan Eich inicialmente con el
+							nombre Mocha, en Netscape</li>
+						<li>En 1997 los autores propusieron llamarlo JavaScript
+							para que fuera adoptado como estándar por la
+							European Computer Manufacturers Association (ECMA)</li>
+						<li>ECMAScript (1996): Especificación de lenguaje de
+							programación. Basado en JavaScript</li>
+						<li>Distintas actualizaciones durante los siguientes años siendo las más importantes
+							las de a partir de 2015
+						</li>
+					</ul>
+				</section>
+
+				<!--historia 2-->
+				<section>
+					<h2>Actualizaciones de JavaScript</h2>
+					<ul>
+						<li>Junio 2015 - ECMAScript 6 - ECMAScript 2015 (cambios muy grandes)</li>
+						<li>Junio 2016 - ECMAScript 2016</li>
+						<li>Junio 2017 - ECMAScript 2017</li>
+						<li>Junio 2018 - ECMAScript 2018</li>
+						<li>Junio 2019 - ECMAScript 2019</li>
+					</ul>
+				</section>
+
+			</section>
+
+			<!-- variables-->
+			<section>
+
+				<!--variables 1-->
+				<section>
+					<h2>Variables</h2>
+					<p style="font-size: 70%;">
+						En JavaScript las variables no tienen asociación de tipo en su definición.<br>
+						El nombre de variable tiene que empezar por a - z , A - Z , $ , o _ . En su contenido
+						puede
+						tener estos además de números 0-9.</br>
+						No se pueden utilizar palabras reservadas para nombres de variables ( for , in , if ,
+						etc)
+					</p>
+					<ul>
+						<li><span class="green">var</span> (JavaScript vanilla)</li>
+						<li><span class="green">let</span> (ECMAScript6)</li>
+						<li><span class="green">const</span> (ECMAScript6)</li>
+					</ul>
+				</section>
+
+				<!--variables 2-->
+				<section>
+					<h2>Variables</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							var variable1 = 'Esta es mi variable';
+							let _variable2 = 45;
+							const $variable3 = {
+								propiedad1: 12,
+								propiedad2: 'esto es la propiedad 2'
+							};
+							variable1 = 23;
+							_variable2 = 'le cambio el nombre';
+							$variable3.nuevaPropiedad = 'esto si podemos hacerlo';
+							console.log(variable1, _variable2, $variable3);
+
+							$variable3 = {
+								nuevaPropiedad: 'esto no se puede hacer'
+							};
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var variable1 = 'Esta es mi variable';
+							let _variable2 = 45;
+							const $variable3 = {
+								propiedad1: 12,
+								propiedad2: 'esto es la propiedad 2'
+							};
+							variable1 = 23;
+							_variable2 = 'le cambio el nombre';
+							$variable3.nuevaPropiedad = 'esto si podemos hacerlo';
+							console.log(variable1, _variable2, $variable3);
+
+							$variable3 = {
+								nuevaPropiedad: 'esto no se puede hacer'
+							};
+							">Test</a>
+
+					</p>
+				</section>
+
+			</section>
+
+			<!-- Code comments-->
+			<section>
+				<h2>Tipos de comentarios en el código</h2>
+
+				<pre>
+					<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+						// Esto es un comentario en linea única
+
+						/* Esto es  un comentario
+							en varias 
+								lineas
+						*/
+						var a = 42; // 42 es el sentido de la vida
+
+						/* El siguente valor va a ser este 
+						porque se ha visto que responde a 
+						cada pregunta en el universo. */
+						var a = 42;
+
+						var a = /* valor arbitrario */ 42;
+						console.log( a ); // 42
+					</code>
+				</pre>
+
+			</section>
+
+			<!-- Values and types-->
+			<section>
+
+				<!-- Values and types 1-->
+				<section>
+					<h1>Valores y tipos</h1>
+					<ul>
+						<li><a href="#/7/2" class="cursor-pointer">undefined</a></li>
+						<li><a href="#/7/3" class="cursor-pointer">null</a></li>
+						<li><a href="#/7/4" class="cursor-pointer">string</a></li>
+						<li><a href="#/7/6" class="cursor-pointer">number</a></li>
+						<li><a href="#/7/8" class="cursor-pointer">boolean</a></li>
+						<li><a href="#/7/11" class="cursor-pointer">symbol (nuevo de ES6)</a></li>
+						<li><a href="#/7/12" class="cursor-pointer">object</a></li>
+						<li>function</li>
+					</ul>
+				</section>
+
+				<!-- Values and types 2-->
+				<section>
+					<h2>Valores y tipos</h2>
+
+					<!-- 
+									El tratar como objeto al tipo null es un bug histórico de javascript que nunca se arreglará.
+									Hay muchas webs 
+								
+								-->
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+									var a;
+									console.log(typeof a); // undefined
+									a = "hello world";
+									console.log(typeof a); // string
+									a = 42;
+									console.log(typeof a); // number
+									a = true;
+									console.log(typeof a); // boolean
+									a = null;
+									console.log(typeof a); // object , bug de JavaScript por como se comporta null
+									a = undefined;
+									console.log(typeof a); // undefined
+									a = { b: "c" };
+									console.log(typeof a); // object
+									a = function () {
+										return 'a';
+									}
+									console.log(typeof a); // function
+									a = Symbol('a');
+									console.log(typeof a); // symbol
+									</code>
+								</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+									var a;
+									console.log(typeof a); // undefined
+									a = 'hello world';
+									console.log(typeof a); // string
+									a = 42;
+									console.log(typeof a); // number
+									a = true;
+									console.log(typeof a); // boolean
+									a = null;
+									console.log(typeof a); // object , bug de JavaScript por como se comporta null
+									a = undefined;
+									console.log(typeof a); // undefined
+									a = { b: 'c' };
+									console.log(typeof a); // object
+									a = function () {
+										return 'a';
+									}
+									console.log(typeof a); // function
+									a = Symbol('a');
+									console.log(typeof a); // symbol
+									">Test</a>
+					</p>
+
+				</section>
+
+				<!-- undefined-->
+				<section>
+					<h2>undefined</h2>
+					<p style="font-size: 70%;" class="justify">
+						El valor de undefined se asigna a todas aquellas variables no inicializadas y también
+						cuando se buscan propiedades de objetos no definidas en el mismo. En contexto de
+						booleanos se considera false.
+					</p>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+										var test;                         // variable declared, but not defined, ...
+												                          // ... set to value of undefined
+										var testObj = {};
+										console.log(test);                // test variable exists, but value not ...
+														                  // ... defined, displays undefined
+										console.log(testObj.myProp);      // testObj exists, property does not, ...
+																	      // ... displays undefined
+										console.log(undefined == null);   // unenforced type during check, displays true
+										console.log(undefined === null);  // enforce type during check, displays false
+									</code>
+								</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+										var test;                         // variable declared, but not defined, ...
+																		// ... set to value of undefined
+										var testObj = {};
+										console.log(test);                // test variable exists, but value not ...
+																		// ... defined, displays undefined
+										console.log(testObj.myProp);      // testObj exists, property does not, ...
+																		// ... displays undefined
+										console.log(undefined == null);   // unenforced type during check, displays true
+										console.log(undefined === null);  // enforce type during check, displays false
+									">Test</a>
+					</p>
+				</section>
 
 
+				<!-- null-->
+				<section>
+					<h2>null</h2>
+					<p style="font-size: 80%;" class="justify">
+						null es un valor que se ha declarado pero que que su contenido es nulo. En contexto de
+						booleanos también se considera false.<br>
+						Es un valor primitivo pero JavaScript al mirar su tipo lo considera object.
+					</p>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+										console.log(null == undefined); // unenforced type during check, displays true
+										console.log(null === undefined); // enforce type during check, displays false
+										console.log(typeof null === 'object'); // true
+									</code>
+								</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+										console.log(null == undefined); // unenforced type during check, displays true
+										console.log(null === undefined); // enforce type during check, displays false
+										console.log(typeof null === 'object'); // true
+									">Test</a>
+					</p>
+				</section>
+
+				<!-- string 1-->
+				<section>
+					<h2>string</h2>
+					<p style="font-size: 80%;" class="justify">
+						Un string en javascript es una secuencia de carácteres creada sobre comillas dobles o
+						simples. </br>Tienen que escribirse en la misma linea aunque permite carácteres de
+						escape
+						de línea como \n y de escape de carácteres especiales \
+					</p>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+										var greeting = 'Hello, \n World!';
+										var anotherGreeting = 'Greetings, people of Earth.';
+										var anotherAnotherGreeting = '\'Ultra Greetings\'';
+										console.log(greeting);
+										console.log(anotherGreeting);
+										console.log(anotherAnotherGreeting);
+									</code>
+								</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+										var greeting = 'Hello, \n World!';
+										var anotherGreeting = 'Greetings, people of Earth.';
+										var anotherAnotherGreeting = '\'Ultra Greetings\'';
+										console.log(greeting);
+										console.log(anotherGreeting);
+										console.log(anotherAnotherGreeting);
+										">Test</a>
+					</p>
+				</section>
+
+				<!-- string 2-->
+				<section>
+					<h2>string</h2>
+					<p style="font-size: 80%;" class="justify">
+						Un string puede comportarse de manera parecida a un array en algunas ocasiones,
+						lo que permite recorrer sus carácteres pero no cambiar su asignación.
+					</p>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+										var myString = 'abcdefg';
+										for(var positionString in myString) {
+										console.log('Position: ' + positionString + ', value position: ' + myString[positionString]);
+										}
+										console.log(myString.charAt(0));
+										var charPosition0 = myString[0];
+										console.log(charPosition0);
+										myString[0] = 'f'; // esto no tendría ningún efecto
+										console.log(myString);
+									</code>
+								</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+										var myString = 'abcdefg';
+										for(var positionString in myString) {
+										console.log('Position: ' + positionString + ', value position: ' + myString[positionString]);
+										}
+										console.log(myString.charAt(0));
+										var charPosition0 = myString[0];
+										console.log(charPosition0);
+										myString[0] = 'f'; // esto no tendría ningún efecto
+										console.log(myString);
+														">Test</a>
+					</p>
+				</section>
+
+				<!-- number 1-->
+				<section>
+
+					<h2>number</h2>
+					<p style="font-size: 70%;" class="justify">Number en JavaScript proporciona una precisión
+						de 16 decimales.
+						</br>
+						Al haber coma flotante (flotating point) pueden haber errores en ciertas operaciones
+						aritméticas con decimales
+						por lo que no se recomienda hacer operaciones matemáticas complejas en JavaScript
+					</p>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+										alert(0.94 - 0.01);
+									</code>
+								</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+										alert(0.94 - 0.01);">Test</a>
+					</p>
+
+				</section>
+
+				<!-- number 2-->
+				<section>
+
+					<h2>number</h2>
+					<p style="font-size: 70%;">
+						Hay distintas maneras de representar un number en JavaScript
+					</p>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+										345; // un "integer", a pesar de que solo hay un tipo numérico en JavaScript
+										34.5; // un número con coma flotante
+										3.45e2; // otro número con coma flotante, que equivale a 345
+										0b1011; //un binary integer que vale 11
+										0o377; // un octal integer que equivale a 255
+										0xFF; // un hexadecimal integer que equivale a 255, los digitos reprensentados por ...
+										// ... las letras A-F puden ser upper o lowercase
+			
+										Infinity; // posible infinito Ej.: 5/0
+										NaN; // Not-A-Number value, devuelto como error en conversiones de string a number
+			
+										typeof Infinity; // returns "number"
+										typeof NaN; // returns "number"
+									</code>
+								</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+										console.log(345); // un 'integer', a pesar de que solo hay un tipo numérico en JavaScript
+										console.log(34.5); // un número con coma flotante
+										console.log(3.45e2); // otro número con coma flotante, que equivale a 345
+										console.log(0b1011); //un binary integer que vale 11
+										console.log(0o377); // un octal integer que equivale a 255
+										console.log(0xFF); // un hexadecimal integer que equivale a 255, los digitos reprensentados por ...
+										// ... las letras A-F puden ser upper o lowercase
+			
+										console.log(5/0);
+										Infinity; // posible infinito Ej.: 5/0
+										console.log(NaN);
+										NaN; // Not-A-Number value, devuelto como error en conversiones de string a number
+			
+										console.log(typeof Infinity);
+										typeof Infinity; // returns 'number'
+										console.log(typeof NaN);
+										typeof NaN; // returns 'number'
+									
+									">Test</a>
+					</p>
+
+				</section>
+
+				<!-- boolean -->
+				<section>
+					<h2>boolean</h2>
+					<ul>
+						<li>JavaScript tiene por booleano los literales true y false.</li>
+						<li>En contexto lógico tipo if, while, etc... por conversión de tipos son considerados
+							booleanos:
+							<ul>
+								<li><span class="red">false</span>: <strong> 0, -0, null, NaN, undefined
+										y '' (string de
+										cadena vacia)</strong><br></li>
+								<li><span class="green">true</span>: <strong>Todos los demás, incluyendo '0' y
+										'false' (estos
+										como string)</strong></li>
+							</ul>
+						</li>
+					</ul>
+
+				</section>
+
+				<!-- conversiones de tipo -->
+				<section>
+					<h3>boolean: Conversiones de tipo automáticas al comparar</h3>
+					<p style="font-size: 70%;" class="justify">
+						A nivel interno, JavaScript realiza las siguientes conversiones de tipo automática en
+						comparaciones
+					</p>
+					<ul>
+						<li><span class="green">number and string</span>: Intenta convertir el string a su
+							valor númerico más cercano y luego lo redondea a su valor numérico más cercano
+						</li>
+						<li><span class="green">boolean</span>: Si uno de los datos a comparar es boolean se
+							convierte en 1 si es true o 0 si es false
+						</li>
+						<li><span class="green">object</span>: Si un objeto es comparado con un string o
+							number, el objeto se convierte en un string o number primitivo antes de compararse
+						</li>
+					</ul>
+				</section>
+
+				<!-- conversiones de tipo -->
+				<section>
+					<h4>boolean: Conversiones de tipo automáticas al comparar</h4>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+									// Conversion automatica
+									console.log(true == 2 ); // false... true → 1 !== 2 ← 2
+									console.log(false == 2 ); // false... false → 0 !== 2 ← 2
+									console.log(true == 1 ); // true.... true → 1 === 1 ← 1
+									console.log(false == 0 ); // true.... false → 0 === 0 ← 0
+									console.log(true == "2"); // false... true → 1 !== 2 ← "2"
+									console.log(false == "2"); // false... false → 0 !== 2 ← "2"
+									console.log(true == "1"); // true.... true → 1 === 1 ← "1"
+									console.log(false == "0"); // true.... false → 0 === 0 ← "0"
+									console.log(false == "" ); // true.... false → 0 === 0 ← ""
+									console.log(false == NaN); // false... false → 0 !== NaN
+			
+									console.log(NaN == NaN); // false...... NaN es el único no equivalente a nada, incluso NaN.
+			
+									// comparación con tipo (no hay conversión de tipos y valores)
+									console.log(true === 1); // false...... los tipos no coinciden
+			
+									// Forzando conversión de tipo
+									console.log(true === !!2); // true.... los tipos y valores coinciden
+									console.log(true === !!0); // false... los tipos coinciden pero los valores no
+									console.log( 1 ? true : false); // true.... solo ±0 y NaN son “falsy” numbers
+									console.log("0" ? true : false); // true.... en string solo carácter vacio es “falsy”
+									console.log(Boolean({})); // true.... todos los objetos son “truthy”
+									</code>
+								</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+									// Conversion automatica
+									console.log(true == 2 ); // false... true → 1 !== 2 ← 2
+									console.log(false == 2 ); // false... false → 0 !== 2 ← 2
+									console.log(true == 1 ); // true.... true → 1 === 1 ← 1
+									console.log(false == 0 ); // true.... false → 0 === 0 ← 0
+									console.log(true == '2'); // false... true → 1 !== 2 ← '2'
+									console.log(false == '2'); // false... false → 0 !== 2 ← '2'
+									console.log(true == '1'); // true.... true → 1 === 1 ← '1'
+									console.log(false == '0'); // true.... false → 0 === 0 ← '0'
+									console.log(false == ''); // true.... false → 0 === 0 ← ''
+									console.log(false == NaN); // false... false → 0 !== NaN
+			
+									console.log(NaN == NaN); // false...... NaN is not equivalent to anything, including NaN.
+			
+									// Type checked comparison (no conversion of types and values)
+									console.log(true === 1); // false...... data types do not match
+			
+									// Explicit type coercion
+									console.log(true === !!2); // true.... data types and values match
+									console.log(true === !!0); // false... data types match, but values differ
+									console.log( 1 ? true : false); // true.... only ±0 and NaN are “falsy” numbers
+									console.log('0' ? true : false); // true.... only the empty string is “falsy”
+									console.log(Boolean({})); // true.... all objects are “truthy”
+									">Test</a>
+					</p>
+				</section>
+
+				<!-- symbol -->
+				<section>
+
+					<h2>symbol</h2>
+					<p style="font-size: 70%;">Nuevo en ECMAScript6. Un Symbol es un identificador único
+						e inmutable.
+					</p>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+										x=Symbol(1);
+										y=Symbol(1);
+										x==y; // false
+										arr=[x,y];
+										arr[x]=1;
+										arr[y]=2; // x and y are unique keys for the array arr
+										arr[x]; // displays 1
+										arr[y]; // displays 2
+										x=Symbol(3);
+										arr; // displays [Symbol(1),Symbol(1)]
+										arr[x]; // is now undefined
+										x=Symbol(1);
+										arr[x]; // undefined
+									</code>
+								</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+										var x=Symbol(1);
+										var y=Symbol(1);
+										console.log(x==y); // false
+										arr=[x,y];
+										arr[x]=1;
+										arr[y]=2; // x and y are unique keys for the array arr
+										console.log(arr[x]); // displays 1
+										console.log(arr[y]); // displays 2
+										x=Symbol(3);
+										console.log(arr); // displays [Symbol(1),Symbol(1)]
+										console.log(arr[x]); // is now undefined
+										x=Symbol(1);
+										console.log(arr[x]); // undefined
+			
+									">Test</a>
+					</p>
+
+				</section>
+
+				<!-- symbol -->
+				<section>
+
+					<h2>object</h2>
+					<p style="font-size: 70%;">Es un tipo especial, con el podemos crear colecciones
+						complejas.
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							var person = {
+								firstName: "John",
+								lastName: "Doe",
+								age: 50,
+								eyeColor: "blue",
+								describe: function() {
+									console.log(this.firstName, this.lastName, this.age, this.eyeColor);
+								}
+								};
+								console.log(person.firstName);
+								console.log(person['lastName']);
+								person.describe();
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+										var person = {
+											firstName: 'John',
+											lastName: 'Doe',
+											age: 50,
+											eyeColor: 'blue',
+											describe: function() {
+												console.log(this.firstName, this.lastName, this.age, this.eyeColor);
+											}
+										  };
+										  console.log(person.firstName);
+										  console.log(person['lastName']);
+										  person.describe();
+							">Test</a>
+					</p>
+
+				</section>
+
+			</section>
+
+			<!-- Code blocks-->
+			<section>
+
+				<!-- Code blocks 1-->
+				<section>
+					<h2>Bloques de código</h2>
+					<p>
+						Cuando necesitamos una serie de operaciones juntas las agrupamos en lo que llamamos
+						bloque.
+						Los bloques estan definidos dentro de un par de llaves { .. }
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							var montante = 99.99;
+							// un bloque génerico
+							{
+								montante = montante * 2;
+								console.log( montante ); // 199.98
+							}
+						</code>
+					</pre>
+				</section>
+
+				<!-- Code blocks 2-->
+				<!-- https://en.wikipedia.org/wiki/JavaScript_syntax#Whitespace_and_semicolons Hablar de esto-->
+				<section>
+					<h2>Problemas con las curly-braces</h2>
+					<p style="font-size: 65%; margin-bottom: 0 !important; padding-bottom: 0 !important;">
+						Si no se colocan bien las curly-braces podemos tener
+						errores debido al conocido como 'semicolon intersection' (cierre automático de
+						sentencias al cambio de lineas).
+					</p>
+
+					<pre style="margin-bottom: 0 !important; margin-top: 0 !important;">
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+						function myFunction() { // test 1
+							return {
+								'status': 'ok'
+							};
+						};
+						console.log(myFunction());
+						function myFunction() { // test 2
+							return 
+							{
+								'status': 'ok'
+							}
+						};
+						console.log(myFunction());
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+						 function myFunction() { // test 1
+							return {
+								'status': 'ok'
+							};
+						};
+						console.log(myFunction());
+							">Test 1</a>
+						<a class="cursor-pointer" onclick="
+						 function myFunction() { // test 2
+							// esto esta mal a posta para la explicación
+							return 
+							{
+								'status': 'ok'
+							}
+						};
+						console.log(myFunction());				
+						">Test 2</a>
+					</p>
+
+				</section>
+
+			</section>
+
+			<!--Operators-->
+			<section>
+
+				<!--Operators 1-->
+				<section>
+					<h1>Operadores</h1>
+					<!--
+									Ya hemos visto los operadores = y *. 
+									En JavaScript primero se calcula el valor de los operandos y luego se asigna.
+									Se tienen que declaran primero las variables si no no se pueden operador con ellas.
+									Se tiene que declaran primero las variables antes de usarlas.
+								-->
+					<pre>
+									<code class="javascript f-s-25p" data-trim contenteditable>
+										var a = 20;
+										a = a + 1;
+										a = a * 2;
+										console.log( a ); // 42
+									</code>
+								</pre>
+					<ul class="fragment fade-up f-s-85">
+
+						<li>En javascript primero se calcula el valor de los operandos y luego se asigna.
+						</li>
+						<li>Se tienen que declaran primero las variables si no no se pueden operar con
+							ellas.</li>
+					</ul>
+
+				</section>
+
+				<!--Operators 2-->
+				<section>
+					<h2>Tipos de operadores</h2>
+
+					<ul>
+						<li><a href="#/9/2" class="cursor-pointer">Asignación</a></li>
+						<li><a href="#/9/3" class="cursor-pointer">Matemáticos</a></li>
+						<li><a href="#/9/4" class="cursor-pointer">Asignación compuesta</a></li>
+						<li><a href="#/9/5" class="cursor-pointer">Incrementar/Decrecer</a></li>
+						<li><a href="#/9/6" class="cursor-pointer">Acceder a propiedades del objeto</a></li>
+						<li><a href="#/9/7" class="cursor-pointer">Igualdad</a></li>
+						<li><a href="#/9/9" class="cursor-pointer">Comparativos</a></li>
+						<li><a href="#/9/10" class="cursor-pointer">Lógicos</a></li>
+					</ul>
+				</section>
+
+				<!--Operators asignación-->
+				<section>
+					<h2>Operadores de asignación</h2>
+					<p>Es el carácter <span class="yellow">=</span></p>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 18px;">
+												var pitufo = 'Esto es un pitufo';
+												alert(pitufo);
+												pitufo = 3; // Ahora pitufo va a ser un número
+												alert(pitufo);
+												pitufo = {
+													altura: 0.1,
+													color: 'azul'
+												}; // Ahora pitufo va a ser un objeto
+												alert('Soy un pitufo y mido ' + pitufo.altura + ' metros y soy 
+												de color ' + pitufo.color);
+												
+									</code>
+								</pre>
+
+					<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
+						<img width="80" height="80" alt="volverDesdeAsignacion" data-src="./img/arrow.png"
+							style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+					</a>
+
+					<a class="cursor-pointer" title="Ejecutar código">
+						<img width="80" height="80" onclick="
+												var pitufo = 'Esto es un pitufo';
+												alert(pitufo); 
+												pitufo = 3; // Ahora pitufo va a ser un número
+												alert(pitufo);
+												pitufo = {
+													altura: 0.1,
+													color: 'azul'
+												}; // Ahora pitufo va a ser un objeto
+												alert('Soy un pitufo y mido ' + pitufo.altura + ' metros y soy de color ' + pitufo.color);
+											" data-src="./img/arrow.png" alt="asignacion"
+							style="transform: rotate(-90deg); -webkit-transform: rotate(90);">
+					</a>
+
+				</section>
+
+
+				<!--Operators matemáticos-->
+				<section>
+					<h2>Operadores matemáticos</h2>
+
+					<ul>
+						<li><a class="cursor-pointer" onclick="alert(2+3)">+ Adición: Ej: alert(2+3)</a></li>
+						<li><a class="cursor-pointer" onclick="alert(52-15)">- Substracción: Ej.
+								alert(52-15)</a></li>
+						<li><a class="cursor-pointer" onclick="alert(5*6)">* Multiplicación: Ej.
+								alert(5*6)</a></li>
+						<li><a class="cursor-pointer" onclick="alert(12/5)">/ División: Ej. alert(12/5)</a>
+						</li>
+					</ul>
+					<p>
+						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeMatemáticos"
+								data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+				<!--Operators asignación compuesta-->
+				<section>
+					<h2>Operadores de asignación compuesta</h2>
+
+					<p class="justify">
+						Son operadores compuestos, primero realizan la operación matemática y luego la
+						asignación.
+					</p>
+
+					<ul>
+						<li><a class="cursor-pointer" onclick="var a = 2; a+=3; alert(a)">+= Adición: Ej: var
+								a = 2; a+=3; alert(a)</a></li>
+						<li><a class="cursor-pointer" onclick="var a = 52; a-=15; alert(a)">-= Substracción:
+								Ej. var a = 52; a-=15; alert(a)</a></li>
+						<li><a class="cursor-pointer" onclick="var a = 5; a*=6; alert(a)">*= Multiplicación:
+								Ej.
+								var a = 5; a*=6; alert(a)</a></li>
+						<li><a class="cursor-pointer" onclick="var a = 12; a/=5; alert(a)">/= División: Ej.
+								var a = 12; a/=5; alert(a)</a>
+						</li>
+					</ul>
+					<p>
+						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeAsignacionCompuesta"
+								data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+
+				<!--Operators incrementar decrecer-->
+				<section>
+					<h2>Operadores de incrementar decrecer</h2>
+
+					<p class="justify">
+						Para facilitar la adición o decrecimiento de valor 1. Operación más asignación.
+					</p>
+
+					<ul>
+						<li><a class="cursor-pointer" onclick="a = 2; a++; alert(a)">++ Incrementar: Ej: var
+								a = 2; a++; alert(a)</a></li>
+						<li><a class="cursor-pointer" onclick="a = 2; a--; alert(a)">-- Decrecer:
+								Ej. a = 2; a--; alert(a)</a></li>
+					</ul>
+					<p>
+						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeIncrementarDecrecer"
+								data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+				<!--Operators Acceder a propiedades de objetos-->
+				<section>
+					<h2>Acceder a propiedades de objetos</h2>
+					<pre>
+									<code class="javascript" data-trim contenteditable style="font-size: 18px;">
+												var pitufo = {
+													altura: 0.1,
+													color: 'azul',
+													describir: function () {
+														alert('Altura: ' + this.altura + ', color: ' + this.color);
+													}
+												};
+												pitufo.describir();
+												pitufo.altura = 2; // Manera primera de acceder a propiedades de objetos
+												pitufo['color'] = 'rojo'; // Otra manera de acceder a propiedades del objeto
+												pitufo.describir();		
+									</code>
+								</pre>
+					<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
+						<img width="80" height="80" alt="volverDesdeObjetos" data-src="./img/arrow.png"
+							style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+					</a>
+
+					<a class="cursor-pointer" title="Ejecutar código">
+						<img width="80" height="80" onclick="
+												var pitufo = {
+													altura: 0.1,
+													color: 'azul',
+													describir: function () {
+														alert('Altura: ' + this.altura + ', color: ' + this.color);
+													}
+												};
+												pitufo.describir();
+												pitufo.altura = 2;
+												pitufo['color'] = 'rojo';
+												pitufo.describir();
+																" data-src="./img/arrow.png" alt="asignacion"
+							style="transform: rotate(-90deg); -webkit-transform: rotate(90);">
+					</a>
+
+				</section>
+
+				<!--Operators de igualdad-->
+				<section>
+					<h2>Operadores de igualdad</h2>
+
+					<ul>
+						<li><strong class="yellow">== Igual sin restricción de tipo</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 == \'2\' : ' + (2 == '2'))">
+										alert("2 == '2': " + (2 == '2'));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 == 2 : ' + (2 == 2))">
+										alert("2 == 2: " + (2 == 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('false == 0 : ' + (false == 0))">
+										alert('false == 0 : ' + (false == 0));
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="yellow">=== Igual con restricción de tipo</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 === \'2\' : ' + (2 === '2'))">
+										alert("2 === '2': " + (2 === '2'));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 === 2 : ' + (2 === 2))">
+										alert("2 === 2: " + (2 === 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer"
+										onclick="alert('false === 0 : ' + (false === 0))">
+										alert('false === 0 : ' + (false === 0));
+									</a>
+								</li>
+
+							</ul>
+
+						</li>
+
+					</ul>
+					<p>
+						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeIgualdad" data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+				<!--Operators de desigualdad-->
+				<section>
+					<h2>Operadores de igualdad</h2>
+
+					<ul>
+						<li><strong class="yellow">!= Distinto a sin restricción de tipo</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 != \'2\' : ' + (2 != '2'))">
+										alert("2 != '2': " + (2 != '2'));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 != 2 : ' + (2 != 2))">
+										alert("2 != 2: " + (2 != 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('false != 0 : ' + (false != 0))">
+										alert('false == 0 : ' + (false == 0));
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="yellow">!== Distinto a con restricción de tipo</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 !== \'2\' : ' + (2 !== '2'))">
+										alert("2 !== '2': " + (2 !== '2'));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert('2 !== 2 : ' + (2 !== 2))">
+										alert("2 !== 2: " + (2 !== 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer"
+										onclick="alert('false !== 0 : ' + (false !== 0))">
+										alert('false === 0 : ' + (false === 0));
+									</a>
+								</li>
+							</ul>
+
+						</li>
+
+					</ul>
+					<p>
+						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeDesIgualdad"
+								data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+				<!--Operators de comparación-->
+				<section>
+					<h2>Operadores de comparación</h2>
+
+					<ul>
+						<li><strong class="yellow">&#60; Menor a, &#60;= Menor o igual a</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 < 2 : ' + (2 < 2))">
+										alert(' 2 &#60; 2 : ' + (2 &#60; 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 <= 2 : ' + (2 <= 2))">
+										alert(' 2 &#60;= 2 : ' + (2 &#60;= 2));
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="yellow">&#62; Mayor a, &#62;= Mayor o igual a </strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 > 2 : ' + (2 > 2))">
+										alert(' 2 &#60; 2 : ' + (2 &#60; 2));
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer" onclick="alert(' 2 >= 2 : ' + (2 >= 2))">
+										alert(' 2 &#60;= 2 : ' + (2 &#60;= 2));
+									</a>
+								</li>
+							</ul>
+
+						</li>
+
+					</ul>
+					<p>
+						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeComparacion"
+								data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+				<!--Operators logicos-->
+				<section>
+					<h2>Operadores lógicos</h2>
+
+					<ul>
+						<li><strong class="yellow">&& (and)</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer"
+										onclick="var a = 3; var b = 4; alert(a && b ? '¡Existen!' : 'Alguno no existe');">
+										var a = 3; var b = 4; alert(a && b ? '¡Existen!' : 'Alguno no
+										existe');
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer"
+										onclick="var a = 3; var b = null; alert(a && b ? '¡Existen!' : 'Alguno no existe');">
+										var a = 3; var b = null; alert(a && b ? '¡Existen!' : 'Alguno no
+										existe');
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="yellow">|| (or)</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer"
+										onclick="var a = 3; var b = null; alert(a || b)">
+										var a = 3; var b = null; alert(a || b);
+									</a>
+								</li>
+								<li>
+									<a class="cursor-pointer"
+										onclick="var a = null; var b = 5; alert(a || b)">
+										var a = null; var b = 5; alert(a || b);
+									</a>
+								</li>
+
+							</ul>
+						</li>
+						<li>
+							<strong class="yellow">! (NOT)</strong>
+							<ul>
+								<li>
+									<a class="cursor-pointer"
+										onclick="var a = true; var b = 'perro'; var c = 0; alert(!a + ' ' + !b + ' ' + !c);">
+										var a = true; var b = 'perro'; var c = 0; alert(!a + ' ' + !b + ' ' +
+										!c);
+									</a>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+					<p>
+						<a href="#/9/1" class="cursor-pointer" title="Volver a tipos operadores">
+							<img width="80" height="80" alt="volverDesdeLogicos" data-src="./img/arrow.png"
+								style="transform: rotate(180deg); -webkit-transform: rotate(180);">
+						</a>
+					</p>
+
+				</section>
+
+			</section>
+
+
+			<!-- Conditionals-->
+			<section>
+
+				<!-- Conditionals 1-->
+				<section>
+					<h2>Condicionales: if</h2>
+					<p>
+						Sirven para acceder a un bloque de código en caso de que una condición se cumpla
+					</p>
+					<p>
+						<form>
+							<span style="font-size: 50%;">Dinero total en el banco:</span> <input
+								type="number" value=100 name="totalBanco" id="totalBanco"><br>
+							<span style="font-size: 50%;">Precio del producto:</span> <input type="number"
+								value=50 name="precioProducto" id="precioProducto">
+						</form>
+					</p>
+					<p>
+						<a class="cursor-pointer" onclick="
+									var totalBanco = document.getElementById('totalBanco').value;
+									var precioProducto = document.getElementById('precioProducto').value;
+									if(totalBanco && precioProducto){
+										totalBanco = Number(totalBanco);
+										precioProducto = Number(precioProducto);
+										if(totalBanco < precioProducto) {
+											alert('Producto muy caro, no puedes comprarlo porque no tienes dinero en el banco');
+										} else if (totalBanco === precioProducto) {
+											alert('Puedes comprarlo pero te quedas sin blanca');
+										} else {
+											alert('Puedes comprarlo sin problema. Te quedaría en la cuenta ' + (totalBanco - precioProducto).toFixed(2));
+										}
+									}else {
+										alert('No has rellenado uno de los campos');
+									}
+									">¿Puedo comprar el producto?</a>
+					</p>
+				</section>
+
+				<!-- Conditionals 2-->
+				<section>
+					<h2>Condicionales: if</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+										var totalBanco = document.getElementById('totalBanco').value;
+										var precioProducto = document.getElementById('precioProducto').value;
+										if(totalBanco && precioProducto){
+											totalBanco = Number(totalBanco);
+											precioProducto = Number(precioProducto);
+											if(totalBanco < precioProducto) { 
+												alert('Producto muy caro, no puedes comprarlo porque 
+												no tienes dinero en el banco'); 
+											} else if (totalBanco === precioProducto) { 
+												alert('Puedes comprarlo pero te quedas sin blanca'); 
+											} else { 
+												alert('Puedes comprarlo sin problema. Te quedaría en la cuenta ' 
+												+ (totalBanco - precioProducto).toFixed(2));
+											}
+										} else {
+											alert(' No has rellenado uno de los campos'); 
+										}
+						</code>
+					</pre>
+				</section>
+
+
+				<!-- Conditionals 3-->
+				<section>
+					<h2>Condicionales: switch</h2>
+					<p style="font-size: 80%">
+						Sirven para acceder a un bloque de código u otro en caso de que se cumpla un
+						determinado valor o no para el caso correspondiente.
+					</p>
+					<p>
+						<form id="colorPitufoForm">
+							<span>Color del pitufo</span><br>
+							<input type="hidden" id="colorRealPitufo" name="colorRealPitufo" value="azul">
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoAzul"
+								value="azul"><label class="cursor-pointer" for="pitufoAzul"
+								style="font-size: 50%;">Azul
+							</label>
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoRojo"
+								value="rojo"><label class="cursor-pointer" for="pitufoRojo"
+								style="font-size: 50%;">Rojo
+							</label>
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoVerde"
+								value="verde" checked><label class="cursor-pointer" for="pitufoVerde"
+								style="font-size: 50%;">Verde
+							</label>
+							<input class="cursor-pointer" type="radio" name="colorPitufo" id="pitufoAmarillo"
+								value="amarillo" checked><label class="cursor-pointer" for="pitufoAmarillo"
+								style="font-size: 50%;">Amarillo </label>
+						</form>
+					</p>
+					<p>
+						<a class="cursor-pointer" onclick="
+						var inputsForm = document.getElementById('colorPitufoForm').elements;
+						var colorPitufoReal = inputsForm['colorRealPitufo'].value;
+						var colorPitufoElegido = inputsForm['colorPitufo'].value;
+						switch(colorPitufoElegido) {
+							case 'azul': 
+								if(colorPitufoReal === 'azul') {
+									alert('¡Correcto! Los pitufos siempre han sido azules');
+								} else {
+									alert('¡Error! Este es un raro caso de un pitufo malvado');
+								}
+								break;
+							case 'rojo': 
+								if(colorPitufoReal === 'rojo') {
+									alert('¡Correcto! Este pitufo es satán en forma de hongo andante');
+								} else {
+									alert('¡Error! Los pitufos no son rojos, en todo caso el gorro de papa pitufo');
+								}
+								break;
+							default: 
+								alert('Lol, es imposible que un pitufo sea de este color');
+								break;
+						}">¿De que color es el pitufo?</a>
+					</p>
+					<p>
+						<img id="fotoPitufo" class="cursor-pointer" width="150" height="200" onclick="
+							var colorPitufoReal = document.getElementById('colorRealPitufo').value;
+							if(colorPitufoReal === 'azul') {
+								document.getElementById('colorRealPitufo').value = 'rojo';
+								document.getElementById('fotoPitufo').src = './img/pitufo_rojo.jpg';
+							} else {
+								document.getElementById('colorRealPitufo').value = 'azul';
+								document.getElementById('fotoPitufo').src = './img/pitufo_azul.jpg';
+							}
+						" data-src="./img/pitufo_azul.jpg" alt="Pitufo">
+					</p>
+				</section>
+
+
+				<!-- Conditionals 4-->
+				<section>
+					<h2>Condicionales: switch</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+						var inputsForm = document.getElementById('colorPitufoForm').elements;
+						var colorPitufoReal = inputsForm['colorRealPitufo'].value;
+						var colorPitufoElegido = inputsForm['colorPitufo'].value;
+						switch(colorPitufoElegido) {
+							case 'azul': 
+								if(colorPitufoReal === 'azul') {
+									alert('¡Correcto! Los pitufos siempre han sido azules');
+								} else {
+									alert('¡Error! Este es un raro caso de un pitufo malvado');
+								}
+								break;
+							case 'rojo': 
+								if(colorPitufoReal === 'rojo') {
+									alert('¡Correcto! Este pitufo es satán en forma de hongo andante');
+								} else {
+									alert('¡Error! Los pitufos no son rojos, en todo caso el 
+									gorro de papa pitufo');
+								}
+								break;
+							default: 
+								alert('Lol, es imposible que un pitufo sea de este color');
+								break;
+						}
+						</code>
+					</pre>
+
+				</section>
+
+			</section>
+
+			<!-- Loops -->
+			<section>
+
+				<!-- Loops explanation-->
+				<section>
+					<h2>Bucles</h2>
+					<p>
+						Sirven para la repetición de acciones mientras dure una determinada condición.
+						Incluyen un bloque de codigo que se ejecutará mientras dicha condición persista.</br>
+						4 tipos:
+					</p>
+					<ul>
+						<li>while</li>
+						<li>do while</li>
+						<li>for</li>
+						<li>for ... in</li>
+					</ul>
+				</section>
+
+				<!-- Loops while vs do while 1-->
+				<section>
+					<h2>while vs do while</h2>
+					<p>
+						La principal diferencia consiste en que "while" no llega a ejecutar el bloque de
+						código
+						si la condición no se cumple y "do while" lo ejecuta pero no repite iteración si no se
+						cumple.
+					</p>
+				</section>
+
+				<!-- Loops while vs do while 2-->
+				<section>
+					<h2>while vs do while</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							var numOfCustomers = 10;
+							var textCustomer = 'Texto de while: \n';
+							while (numOfCustomers > 0) {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							}
+							textCustomer += 'Texto de do while: \n';
+							// versus:
+							numOfCustomers = 10;
+							do {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							} while (numOfCustomers > 0);
+							alert(textCustomer);
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var numOfCustomers = 10;
+							var textCustomer = 'Texto de while: \n';
+							while (numOfCustomers > 0) {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							}
+							textCustomer += 'Texto de do while: \n';
+							// versus:
+							numOfCustomers = 10;
+							do {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							} while (numOfCustomers > 0);
+							alert(textCustomer);
+							">Test</a>
+					</p>
+				</section>
+
+				<!-- Loops while vs do while 3-->
+				<section>
+					<h2>while vs do while</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							var numOfCustomers = 10;
+							var textCustomer = 'Texto de while: \n';
+							while (false) {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							}
+							textCustomer += 'Texto de do while: \n';
+							// versus:
+							numOfCustomers = 10;
+							do {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							} while (false);
+							alert(textCustomer);
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var numOfCustomers = 10;
+							var textCustomer = 'Texto de while: \n';
+							while (false) {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							}
+							textCustomer += 'Texto de do while: \n';
+							// versus:
+							numOfCustomers = 10;
+							do {
+								textCustomer += 'Hay ' +  numOfCustomers + ' cliente/s \n';
+								numOfCustomers = numOfCustomers - 1;
+							} while (false);
+							alert(textCustomer);
+							">Test</a>
+					</p>
+				</section>
+
+				<!-- Loops - for-->
+				<section>
+					<h2>Bucle for</h2>
+					<p>Los bucles for son en esencia bucles while con codiciones de entrada a bucle y de fin
+						de
+						iteración.</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
+							
+							for (var i = 0; i <= 9; i = i + 1) {
+								console.log(i);
+							} // bucle for 0 1 2 3 4 5 6 7 8 9
+							console.log('esto es igual que el siguiente bucle while');
+							var j = 0;
+							while(j <= 9) {
+								console.log(j);
+								j = j + 1;
+							} // 0 1 2 3 4 5 6 7 8 9
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							for (var i = 0; i <= 9; i = i + 1) {
+								console.log(i);
+							}
+							// 	bucle for: 0 1 2 3 4 5 6 7 8 9
+							console.log('esto es igual que el siguiente bucle while');
+							 var j = 0;
+							while(j <= 9) {
+								console.log(j);
+								j = j + 1;
+							} // 0 1 2 3 4 5 6 7 8 9
+							">Test</a>
+					</p>
+					<!--
+						As you can see, in both cases the conditional i <= 9 is true for the
+						first 10 iterations ( i of values 0 through 9 ) of either loop form, but
+						becomes false once i is value 10 .
+	
+						The for loop has three clauses: the initialization clause ( var i=0 ),
+						the conditional test clause ( i <= 9 ), and the update clause ( i = i +
+						1 ). So if you’re going to do counting with your loop iterations, for is
+						a more compact and often easier form to understand and write.
+	
+						There are other specialized loop forms that are intended to iterate
+						over specific values, such as the properties of an object (see Chap‐
+						ter 2) where the implied conditional test is just whether all the prop‐
+						erties have been processed. The “loop until a condition fails”
+						concept holds no matter what the form of the loop
+					-->
+				</section>
+
+				<!-- for in-->
+				<section>
+					<h2>bucle for ... in</h2>
+					<p style="font-size: 85%;">El bucle <strong>for ... in</strong> itera sobre las
+						propiedades de un objeto o array
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
+							var miObjeto = {
+								valorPrimero: 4545,
+								valorSegundo: 77885
+							};
+							var miArray = [1212, 455, 5656];
+							for(var nombrePropiedad in miObjeto) {
+								console.log('Objeto propiedad: ' + nombrePropiedad + ', Objeto valor: ' + miObjeto[nombrePropiedad]);
+							}
+							for(var posicionArray in miArray) {
+								console.log('Array posición: ' + posicionArray + ', Array valor: ' + miArray[posicionArray]);
+							}
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var miObjeto = {
+								valorPrimero: 4545,
+								valorSegundo: 77885
+							};
+							var miArray = [1212, 455, 5656];
+							for(var nombrePropiedad in miObjeto) {
+							console.log('Objeto propiedad: ' + nombrePropiedad + ', Objeto valor: ' + miObjeto[nombrePropiedad]);
+							}
+							for(var posicionArray in miArray) {
+								console.log('Array posición: ' + posicionArray + ', Array valor: ' + miArray[posicionArray]);
+							}
+							">Test</a>
+					</p>
+				</section>
+
+
+			</section>
+
+			<!-- Functions-->
+			<section>
+
+				<!-- Functions 1-->
+				<section>
+					<h2>Funciones</h2>
+					<!--
+					The phone store employee probably doesn’t carry around a calcula‐
+					tor to figure out the taxes and final purchase amount. That’s a task
+					she needs to define once and reuse over and over again. Odds are,
+					the company has a checkout register (computer, tablet, etc.) with
+					those “functions” built in.
+
+					Similarly, your program will almost certainly want to break up the
+					code’s tasks into reusable pieces, instead of repeatedly repeating
+					yourself repetitiously (pun intended!). The way to do this is to
+					define a function
+				-->
+					<p class="justify">
+						Una función es una porción de código que puede ser llamada y que cada vez que
+						se hace ejecuta el código en su interior.
+					</p>
+					<p class="justify">
+						Conviene usarlas para evitar duplicidad de código de
+						tareas repetitivas que se puedan abstraer.
+					</p>
+
+				</section>
+
+				<!-- Functions 2-->
+				<section>
+					<h2>Funciones</h2>
+
+					<!--
+						Explicación funciones. 
+						Decir que puede llamarse aunque se defina más abajo
+					-->
+					<p class="justify">Las funciones pueden llamarse mientras estén definidas en el mismo
+						scope</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
+							printAmount();
+							function printAmount() {
+								alert(amount ? amount.toFixed(2) : 'Aún no está definido amount');
+							}
+							var amount = 99.99;
+							printAmount(); // 99.99
+							
+							amount = amount * 2;
+							printAmount(); // 199.98
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							printAmount();
+							function printAmount() {
+								alert(amount ? amount.toFixed(2) : 'Aún no está definido amount');
+							}
+							var amount = 99.99;
+							printAmount(); // 99.99
+
+							amount = amount * 2;
+							printAmount(); // 199.98
+							">Test</a>
+					</p>
+
+				</section>
+
+				<!-- Functions 3-->
+				<section>
+					<h2>Funciones con parámetros</h2>
+
+					<!--
+						Explicación funciones. 
+						Decir que puede llamarse aunque se defina más abajo
+					-->
+					<p class="justify">Se les pueden pasar parámtros a las funciones, incluso otras funciones
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
+							var TAX_RATE = 0.08;
+							function calculateFinalPurchaseAmount(amt) {
+								// calcula el montante con los impuestos
+								amt = amt + (amt * TAX_RATE);
+								// regresa el nuevo montante
+								return amt;
+								// tb seria valido return (amt + (amt * TAX_RATE));
+							}
+							var amount = 99.99;
+							amount = calculateFinalPurchaseAmount(amount);
+							alert( amount.toFixed( 2 ) ); // 107.99
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var TAX_RATE = 0.08;
+							function calculateFinalPurchaseAmount(amt) {
+								// calcula el montante con los impuestos
+								amt = amt + (amt * TAX_RATE);
+								// regresa el nuevo montante
+								return amt;
+								// tb seria valido return (amt + (amt * TAX_RATE));
+							}
+							var amount = 99.99;
+							amount = calculateFinalPurchaseAmount(amount);
+							alert( amount.toFixed( 2 ) ); // 107.99
+							">Test</a>
+					</p>
+
+				</section>
+
+				<!-- Functions 4-->
+				<section>
+					<h2>Funciones con función como parámetros</h2>
+
+					<!--
+						Explicación funciones. 
+						Decir que puede llamarse aunque se defina más abajo
+					-->
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 15px;">
+							var TAX_RATE = 0.08;
+							function calculateFinalPurchaseAmount(amt, functionAmt) {
+								// Ejecuamos la función que se le ha pasado como parámetro
+								return functionAmt(amt);
+							}
+							var amount = 99.99;
+							amount = calculateFinalPurchaseAmount(amount, function(amt) {
+								return (amt + (amt * TAX_RATE));
+							});
+							alert( amount.toFixed( 2 ) ); // 107.99
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							var TAX_RATE = 0.08;
+							function calculateFinalPurchaseAmount(amt, functionAmt) {
+								// Ejecuamos la función que se le ha pasado como parámetro
+								return functionAmt(amt);
+							}
+							var amount = 99.99;
+							amount = calculateFinalPurchaseAmount(amount, function(amt) {
+								return (amt + (amt * TAX_RATE));
+							});
+							alert( amount.toFixed( 2 ) ); // 107.99
+							">Test</a>
+					</p>
+
+				</section>
+
+			</section>
+
+			<!-- scope -->
+			<section>
+
+				<!-- scope 1 -->
+				<section>
+					<h1>Scope</h1>
+					<p>¿Qué es el scope?</p>
+					<p>
+						<a class="cursor-pointer">
+							<img id="scopeImagen" width="300" height="300" onclick="
+								var imagenScope = document.getElementById('scopeImagen');
+								var srcToCheck = imagenScope.src;
+								if(srcToCheck.indexOf('question.png') !== -1){
+									imagenScope.src = './img/phones.png';
+									imagenScope.width = '600';
+								}
+								" data-src="./img/question.png" alt="question">
+						</a>
+					</p>
+				</section>
+
+				<!-- Scope 2-->
+				<section>
+					<h2>Scope</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+						function pedirMovilTiendaApple() {
+							var movil = {
+								modelo: 'iPhone 11 Pro Max',
+								precio: 1259
+							};
+							alert('Tome su móvil ' + movil.modelo + '. Vale ' + movil.precio + '€.');
+						}
+						function pedirMovilTiendaXiaomi() {
+							var movil = {
+								modelo: 'Xiaomi Mi Note 10',
+								precio: 549
+							};
+							alert('Tome su móvil ' + movil.modelo + '. Vale ' + movil.precio + '€.');
+						}
+						pedirMovilTiendaXiaomi();
+						pedirMovilTiendaApple();
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+						function pedirMovilTiendaApple() {
+							var movil = {
+								modelo: 'iPhone 11 Pro Max',
+								precio: 1259
+							};
+							alert('Tome su móvil ' + movil.modelo + '. Vale ' + movil.precio + '€.');
+						}
+						function pedirMovilTiendaXiaomi() {
+							var movil = {
+								modelo: 'Xiaomi Mi Note 10',
+								precio: 549
+							};
+							alert('Tome su móvil ' + movil.modelo + '. Vale ' + movil.precio + '€.');
+						}
+						pedirMovilTiendaXiaomi();
+						pedirMovilTiendaApple();
+						">Pedir movil</a>
+					</p>
+
+				</section>
+
+				<!-- Scope 2-->
+				<section>
+					<h2>Scope</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+						function outer() {
+							var a = 1;
+							function inner() {
+								var b = 2;
+								// podemos acceder a ambas `a` y `b` aqui
+								alert( a + b ); // 3
+							}
+							inner();
+							// solo podemos acceder a `a` aqui
+							alert( a ); // 1
+						}
+						outer();
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+						function outer() {
+							var a = 1;
+							function inner() {
+								var b = 2;
+								// podemos acceder a ambas `a` y `b` aqui
+								alert( a + b ); // 3
+							}
+							inner();
+							// solo podemos acceder a `a` aqui
+							alert( a ); // 1
+						}
+						outer();
+						">Test</a>
+					</p>
+
+				</section>
+
+			</section>
+
+			<!-- arrays-->
+			<section>
+
+				<!-- arrays 1-->
+				<section>
+					<h2>arrays</h2>
+					<ul>
+						<li>Son coleccioniones de cualquier tipo, incluso dentro de la misma colección</li>
+						<li>JavaScript los considera de tipo object porque realmente es un objeto prototipado
+							con Array
+							como constructor y con métodos especificamente diseñados para ayudar al
+							programador</li>
+						<li>Usa el esquema de indexación donde 0 es la primera iteración.</li>
+					</ul>
+				</section>
+
+				<!-- arrays 2-->
+				<section>
+					<h2>arrays</h2>
+					<p style="font-size: 70%;">
+						Varias maneras de incializarlos.
+					</p>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							var myArray = [0, 1, , , 4, 5];   
+							console.log(myArray);
+							console.log(myArray[1]);
+							console.log(myArray['1']);
+							console.log(myArray['01']);
+							// array with length 6 and 6 elements, ...
+							// ... including 2 undefined elements
+							myArray = new Array(0, 1, 2, 3, 4, 5); 
+							console.log(myArray);
+							// array with length 6 and 6 elements
+							myArray = new Array(365);
+							console.log(myArray);
+							// an empty array with length 365
+						</code>
+					</pre>
+
+					<p>
+						<a class="cursor-pointer" onclick="
+							var myArray = [0, 1, , , 4, 5]; 
+							console.log(myArray);
+							console.log(myArray[1]);
+							console.log(myArray['1']);
+							console.log(myArray['01']);  
+							// array with length 6 and 6 elements, ...
+							// ... including 2 undefined elements
+							myArray = new Array(0, 1, 2, 3, 4, 5); 
+							console.log(myArray);
+							// array with length 6 and 6 elements
+							myArray = new Array(365);
+							console.log(myArray);
+							// an empty array with length 365
+
+						">Test</a>
+					</p>
+
+				</section>
+
+				<!-- arrays 3-->
+				<section>
+					<h2>arrays: métodos en vanilla JavaScript</h2>
+					<ul>
+						<li>Considerando var miArray = ['primero','segundo','tercero','cuarto'];</li>
+						<li>miArray<span class="green">.length</span> : Devuelve el número total de elementos
+							del array
+						</li>
+						<li>miArray<span class="green">.push(</span>nuevoElem<span class="green">)</span>:
+							Añade un elemento al final del array</li>
+						<li>miArray<span class="green">.pop()</span>: Elimina el último elemento del array
+						</li>
+						<li>miArray<span class="green">.shift()</span>: Elimina el primer elemento del array
+						</li>
+						<li>miArray<span class="green">.unshift(</span>nuevoElem<span class="green">)</span>:
+							Añade un elemento al principio del array</li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- object constructor-->
+			<section>
+
+				<!-- object constructor 1-->
+				<section>
+					<h2>Constructor en Javascript vanilla</h2>
+					<ul>
+						<li>En Javascript (más en vanilla), usamos las funciones constructoras de objetos.
+						</li>
+						<li>Una vez creados los podemos llamar las veces que queramos con "new
+							MiObjeto(parametros)"
+						</li>
+					</ul>
+				</section>
+
+				<!-- object constructor 2-->
+				<section>
+					<h3>Constructor en Javascript vanilla: Ej.</h3>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							// Constructor function for Person objects
+							function Person(first, last, age, eye) {
+							  this.firstName = first;
+							  this.lastName = last;
+							  this.age = age;
+							  this.eyeColor = eye;
+							  this.nationality = "English";
+							  
+							  this.seeProperties = seeProperties;
+								
+							  function seeProperties() {
+								  alert('firstName: ' + this.firstName + ', lastName: ' + this.lastName + ', age:' + this.age + ', eyeColor:' + 	this.eyeColor + ', nationality:' + this.nationality);
+							  }
+							}
+							// Create 2 Person objects
+							var myFather = new Person("John", "Doe", 50, "blue");
+							var myMother = new Person("Sally", "Rally", 48, "green");
+							
+							myFather.seeProperties();
+							myMother.seeProperties();
+							alert(myFather instanceof Person);
+						</code>
+					</pre>
+					<p>
+						<a class="cursor-pointer" onclick="
+							// Constructor function for Person objects
+							function Person(first, last, age, eye) {
+							  this.firstName = first;
+							  this.lastName = last;
+							  this.age = age;
+							  this.eyeColor = eye;
+							  this.nationality = 'English';
+							  
+							  this.seeProperties = seeProperties;
+								
+								function seeProperties() {
+								  alert('firstName: ' + this.firstName + ', lastName: ' + this.lastName + ', age:' + this.age + ', eyeColor:' + 	this.eyeColor + ', nationality:' + this.nationality);
+							  }
+							}
+							
+							// Create 2 Person objects
+							var myFather = new Person('John', 'Doe', 50, 'blue');
+							var myMother = new Person('Sally', 'Rally', 48, 'green');
+							
+							myFather.seeProperties();
+							myMother.seeProperties();
+							alert(myFather instanceof Person);
+
+							">Test</a>
+
+					</p>
+				</section>
+
+				<!-- object constructor 3-->
+				<section>
+					<h3>Constructor en JavaScript vanilla: this</h3>
+					<ul>
+						<li>this dentro de su scope contiene su "propio" codigo</li>
+						<li>El valor de this cuando se usa en un objeto es el mismo</li>
+						<li>this no tiene valor por si misma hasta que se crea el objeto en si con el
+							constructor</li>
+						<li>Importante decir que this no es una variable, no se puede alterar el valor en si
+							de this.
+							Ej.
+							var a
+							= 'nuevo this'; this = a;</li>
+					</ul>
+				</section>
+
+			</section>
+
+			<!-- Whitespace and semicolons-->
+			<section>
+
+				<!-- Whitespace and semicolons 1-->
+				<section>
+					<h2>Whitespace and semicolons</h2>
+					<p>Dos principales problemas: </p>
+
+					<ul>
+						<!--five tokens can either begin a statement or be the extension of a complete statement-->
+						<li>Cinco carácteres que pueden ser principio de sentencia o extensión:
+							<strong>(</strong> <strong>[</strong> <strong>/</strong>
+							<strong>+</strong> <strong>-</strong> </li>
+						<li>Cinco comandos restrictivos: <strong>return</strong> | <strong>throw</strong> |
+							<strong>break</strong> | <strong>continue</strong> | <strong>++ o -- </strong>
+						</li>
+					</ul>
+
+				</section>
+
+				<!-- Whitespace and semicolons 2-->
+				<section>
+					<h2>5 carácteres de inicio o extensión. Ej:</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+						a = b + c
+						(d + e).foo()
+
+						// Será ejecutado como:
+						// a = b + c(d + e).foo();
+
+						a = b + c
+						;(d + e).foo()
+						
+						// Será ejecutado como:
+						// a = b + c;
+						// (d + e).foo();
+						</code>
+					</pre>
+				</section>
+
+				<!-- Whitespace and semicolons 3-->
+				<section>
+					<h2>5 comandos restrictivos. Ej:</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 17px;">
+							return
+							a + b;
+
+							// Devuelve undefined. Será ejecutado como:
+							// 	  return;
+							// 	  a + b;
+							// Debería ser reescrito como:
+							//    return a + b;
+						</code>
+					</pre>
+				</section>
 
 			</section>
 
@@ -62,6 +2138,8 @@
 			progress: true,
 			center: true,
 			hash: true,
+			mouseWheel: true,
+			width: '90%',
 
 			transition: 'slide', // none/fade/slide/convex/concave/zoom
 

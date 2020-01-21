@@ -1,0 +1,62 @@
+img[alt="Title"] {
+    width: 30%;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.largue {
+    font-size: 300%;
+}
+
+.border-red {
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.f-s-85 {
+    font-size: 85%;
+}
+
+.f-s-25p {
+    font-size: 25px;
+}
+
+section>p.justify {
+    text-align: justify;
+}
+
+body {
+    background: url('../img/wallpaper.jpg');
+    background-size: cover;
+    /* the following are for firefox 70 */
+    opacity: 1;
+    z-index: 1;
+}
+
+@media print {
+    .backgrounds {
+        background: url('../img/wallpaper.jpg');
+        /* if you used "cover" on screen,
+		 * you will probably want "contains" on print */
+        background-size: contain;
+    }
+}
