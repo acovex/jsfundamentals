@@ -12,8 +12,9 @@ var rawPersons = [
 ];
 var leftPersons = [...rawPersons];
 
+document.getElementById("iniciales").innerHTML = rawPersons.join(", ");
+
 function generateRandomPerson() {
-  document.getElementById("iniciales").innerHTML = rawPersons.join(", ");
   var randomPosition = Math.floor(Math.random() * leftPersons.length);
   var randomPersonSelected = leftPersons[randomPosition];
   document.getElementById("elegida").innerHTML = randomPersonSelected;
@@ -21,5 +22,6 @@ function generateRandomPerson() {
   document.getElementById("restantes").innerHTML = leftPersons.join(", ");
   if (leftPersons.length === 0) {
     leftPersons = [...rawPersons];
+    document.getElementById("restantes").innerHTML = leftPersons.join(", ");
   }
 }
