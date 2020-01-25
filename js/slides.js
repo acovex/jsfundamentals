@@ -93,7 +93,7 @@ function string2() {
   console.log(myString.charAt(0));
   var charPosition0 = myString[0];
   console.log(charPosition0);
-  myString[0] = "f"; // esto no tendría ningún efecto y daria error en modo estricto
+  // myString[0] = "f"; // esto no tendría ningún efecto y daria error en modo estricto
   console.log(myString);
 }
 
@@ -474,6 +474,7 @@ function scope2() {
     };
     alert("Tome su móvil " + movil.modelo + ". Vale " + movil.precio + "€.");
   }
+
   function pedirMovilTiendaXiaomi() {
     var movil = {
       modelo: "Xiaomi Mi Note 10",
@@ -483,6 +484,19 @@ function scope2() {
   }
   pedirMovilTiendaXiaomi();
   pedirMovilTiendaApple();
+}
+
+function hoisting1() {
+  var a = 2;
+  foo(); // works because `foo()`
+  // declaration is "hoisted"
+  function foo() {
+    a = 3;
+    console.log(a); // 3
+    var a; // declaration is "hoisted"
+    // to the top of `foo()`
+  }
+  console.log(a); // 2
 }
 
 function scope3() {
@@ -550,4 +564,32 @@ function constr1() {
   myFather.seeProperties();
   myMother.seeProperties();
   alert(myFather instanceof Person);
+}
+
+function prototypeExpl() {
+  function MiClase(esto, loOtro) {
+    this.esto = esto;
+    this.loOtro = loOtro;
+  }
+  MiClase.prototype.muestra = function() {
+    console.log(
+      "muestra en prototype",
+      "esto ",
+      this.esto,
+      ", lo otro ",
+      this.loOtro
+    );
+  };
+  MiClase.muestraStatico = function() {
+    console.log(
+      "muestraStatico ",
+      "esto ",
+      this.esto,
+      ", lo otro ",
+      this.loOtro
+    );
+  };
+  var a = new MiClase("xd", 42);
+  a.muestra();
+  MiClase.muestraStatico();
 }
