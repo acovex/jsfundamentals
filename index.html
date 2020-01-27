@@ -111,6 +111,15 @@
 					<img width="1000px" height="600px" src="./img\javascript1.jpg" alt="question1">
 				</section>
 
+				<section>
+					<h2>¿Alguién sabe hacer la canción de Batman con JavaScript?</h2>
+
+					<a class="cursor-pointer">
+						<img src="./img\batusi.jpg" alt="batusi"
+							onclick="console.log(Array(16).join('hero' - 1), ' Batman!!')">
+					</a>
+				</section>
+
 			</section>
 
 			<!--Statements-->
@@ -225,6 +234,12 @@
 				<!--historia 1-->
 				<section>
 					<h2>Un poco de historia...</h2>
+					<img width="1000px" height="400px" src="./img\jsLogo.jpg" alt="jsLogo">
+				</section>
+
+				<!--historia 1-->
+				<section>
+					<h2>Un poco de historia...</h2>
 					<ul>
 						<li>Creado en 1995 por Brendan Eich inicialmente con el
 							nombre Mocha, en Netscape</li>
@@ -251,6 +266,13 @@
 					</ul>
 				</section>
 
+				<section>
+					<a class="cursor-pointer"
+						href="https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/">
+						<img width="600px" height="700px" src="./img\jsglorious.jpg" alt="jsglorious">
+					</a>
+				</section>
+
 			</section>
 
 			<!-- variables-->
@@ -272,6 +294,10 @@
 						<li><span class="green">let</span> (ECMAScript6)</li>
 						<li><span class="green">const</span> (ECMAScript6)</li>
 					</ul>
+				</section>
+
+				<section>
+					<img src="./img\variable.jpg" alt="variable">
 				</section>
 
 				<!--variables 2-->
@@ -342,9 +368,9 @@
 						<li><a href="#/8/3" class="cursor-pointer">null</a></li>
 						<li><a href="#/8/4" class="cursor-pointer">string</a></li>
 						<li><a href="#/8/6" class="cursor-pointer">number</a></li>
-						<li><a href="#/8/8" class="cursor-pointer">boolean</a></li>
-						<li><a href="#/8/11" class="cursor-pointer">symbol (nuevo de ES6)</a></li>
-						<li><a href="#/8/12" class="cursor-pointer">object</a></li>
+						<li><a href="#/8/9" class="cursor-pointer">boolean</a></li>
+						<li><a href="#/8/15" class="cursor-pointer">symbol (nuevo de ES6)</a></li>
+						<li><a href="#/8/16" class="cursor-pointer">object</a></li>
 						<li>function</li>
 					</ul>
 				</section>
@@ -524,6 +550,10 @@
 
 				</section>
 
+				<section>
+					<img height="600px" width="400px" src="./img\typeOfNaN.jpg" alt="typeOfNaN">
+				</section>
+
 				<!-- number 2-->
 				<section>
 
@@ -532,22 +562,22 @@
 						Hay distintas maneras de representar un number en JavaScript
 					</p>
 					<pre>
-									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
-										345; // un "integer", a pesar de que solo hay un tipo numérico en JavaScript
-										34.5; // un número con coma flotante
-										3.45e2; // otro número con coma flotante, que equivale a 345
-										0b1011; //un binary integer que vale 11
-										0o377; // un octal integer que equivale a 255
-										0xFF; // un hexadecimal integer que equivale a 255, los digitos reprensentados por ...
-										// ... las letras A-F puden ser upper o lowercase
-			
-										Infinity; // posible infinito Ej.: 5/0
-										NaN; // Not-A-Number value, devuelto como error en conversiones de string a number
-			
-										typeof Infinity; // returns "number"
-										typeof NaN; // returns "number"
-									</code>
-								</pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							345; // un "integer", a pesar de que solo hay un tipo numérico en JavaScript
+							34.5; // un número con coma flotante
+							3.45e2; // otro número con coma flotante, que equivale a 345
+							0b1011; //un binary integer que vale 11
+							0o377; // un octal integer que equivale a 255
+							0xFF; // un hexadecimal integer que equivale a 255, los digitos reprensentados por ...
+							// ... las letras A-F puden ser upper o lowercase
+
+							Infinity; // posible infinito Ej.: 5/0
+							NaN; // Not-A-Number value, devuelto como error en conversiones de string a number
+
+							typeof Infinity; // returns "number"
+							typeof NaN; // returns "number"
+						</code>
+					</pre>
 					<p>
 						<a class="cursor-pointer">
 							<img class="clean-img" width="50" height="50" onclick="number2()" src="./img/execute3.png"
@@ -555,6 +585,10 @@
 						</a>
 					</p>
 
+				</section>
+
+				<section>
+					<img src="./img\jsmeme1.png" alt="jsmeme1">
 				</section>
 
 				<!-- boolean -->
@@ -565,21 +599,61 @@
 						<li>En contexto lógico tipo if, while, etc... por conversión de tipos son considerados
 							booleanos:
 							<ul>
-								<li><span class="red">false</span>: <strong> 0, -0, null, NaN, undefined
+								<li><span class="red">false (falsy)</span>: <strong> 0, -0, null, NaN, undefined
 										y '' (string de
 										cadena vacia)</strong><br></li>
-								<li><span class="green">true</span>: <strong>Todos los demás, incluyendo '0' y
+								<li><span class="green">true (truthy)</span>: <strong>Todos los demás, incluyendo '0' y
 										'false' (estos
 										como string)</strong></li>
 							</ul>
 						</li>
 					</ul>
+				</section>
 
+
+				<section>
+					<h2>Truthy y Falsy</h2>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							function testTruthyFalsy (val) { 
+								return val ? console.log('truthy') : console.log('falsy'); 
+							}
+							 
+							testTruthyFalsy(true);                   // truthy 
+							testTruthyFalsy(false);                  // falsy 
+							testTruthyFalsy(new Boolean(false));     // truthy (object is always true) 
+							  
+							testTruthyFalsy('');                     // falsy 
+							testTruthyFalsy('Packt');                // truthy 
+							testTruthyFalsy(new String(''));         // true (object is always true) 
+							  
+							testTruthyFalsy(1);                      // truthy 
+							testTruthyFalsy(-1);                     // truthy 
+							testTruthyFalsy(NaN);                    // falsy 
+							testTruthyFalsy(new Number(NaN));        // truthy (object is always true) 
+							  
+							testTruthyFalsy({});                     // truthy (object is always true) 
+							  
+							var obj = { name: 'John' }; 
+							testTruthyFalsy(obj);                    // truthy 
+							testTruthyFalsy(obj.name);               // truthy 
+						</code>
+					</pre>
+
+					<a class="cursor-pointer">
+						<img class="clean-img" width="50" height="50" onclick="truthyFalsy()" src="./img/execute3.png"
+							alt="conversionesDeTipo">
+					</a>
+				</section>
+
+
+				<section>
+					<img src="./img\jsmeme2.png" alt="jsmeme2">
 				</section>
 
 				<!-- conversiones de tipo -->
 				<section>
-					<h3>boolean: Conversiones de tipo automáticas al comparar</h3>
+					<h3>boolean: Conversiones de tipo automáticas al comparar (coercion)</h3>
 					<p style="font-size: 70%;" class="justify">
 						A nivel interno, JavaScript realiza las siguientes conversiones de tipo automática en
 						comparaciones
@@ -595,6 +669,10 @@
 							number, el objeto se convierte en un string o number primitivo antes de compararse
 						</li>
 					</ul>
+				</section>
+
+				<section>
+					<img src="./img\scumbag-javascript.jpeg" alt="scumbag-javascript">
 				</section>
 
 				<!-- conversiones de tipo -->
@@ -635,6 +713,11 @@
 					</p>
 				</section>
 
+				<section>
+					<img src="./img\jscrying.jpg" alt="jscrying">
+				</section>
+
+
 				<!-- symbol 1-->
 				<section>
 
@@ -643,22 +726,22 @@
 						e inmutable.
 					</p>
 					<pre>
-									<code class="javascript" data-trim contenteditable style="font-size: 14px;">
-										x=Symbol(1);
-										y=Symbol(1);
-										x==y; // false
-										var arr=[x,y];
-										arr[x]=1;
-										arr[y]=2; // x and y are unique keys for the array arr
-										arr[x]; // displays 1
-										arr[y]; // displays 2
-										x=Symbol(3);
-										arr; // displays [Symbol(1),Symbol(1)]
-										arr[x]; // is now undefined
-										x=Symbol(1);
-										arr[x]; // undefined
-									</code>
-								</pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 14px;">
+							x=Symbol(1);
+							y=Symbol(1);
+							x==y; // false
+							var arr=[x,y];
+							arr[x]=1;
+							arr[y]=2; // x and y are unique keys for the array arr
+							arr[x]; // displays 1
+							arr[y]; // displays 2
+							x=Symbol(3);
+							arr; // displays [Symbol(1),Symbol(1)]
+							arr[x]; // is now undefined
+							x=Symbol(1);
+							arr[x]; // undefined
+						</code>
+					</pre>
 					<p>
 						<a class="cursor-pointer">
 							<img class="clean-img" width="50" height="50" onclick="symbolExp()" src="./img/execute3.png"
@@ -704,7 +787,9 @@
 
 			<!-- Code blocks-->
 			<section>
-
+				<section>
+					<img src="./img\javascriptKids.jpg" alt="javascriptKids">
+				</section>
 				<!-- Code blocks 1-->
 				<section>
 					<h2>Bloques de código</h2>
@@ -989,6 +1074,10 @@
 
 				</section>
 
+				<section>
+					<img src="./img\coercion-every-time-2.jpeg" alt="coercion-every-time-2">
+				</section>
+
 				<!--Operators de desigualdad-->
 				<section>
 					<h2>Operadores de igualdad</h2>
@@ -1039,6 +1128,10 @@
 
 				</section>
 
+				<section>
+					<img src="./img\just-use-triple-equals.jpeg" alt="just-use-triple-equals">
+				</section>
+
 				<!--Operators de comparación-->
 				<section>
 					<h2>Operadores de comparación</h2>
@@ -1079,6 +1172,9 @@
 
 				</section>
 
+				<section>
+					<img width="800px" height="600px" src="./img\starwarsjs.png" alt="starwarsjs">
+				</section>
 				<!--Operators logicos-->
 				<section>
 					<h2>Operadores lógicos</h2>
@@ -1544,6 +1640,10 @@
 
 				</section>
 
+				<section>
+					<img src="./img\jsAwesome.jpeg" alt="jsAwesome">
+				</section>
+
 			</section>
 
 			<!-- scope -->
@@ -1648,6 +1748,11 @@
 
 			<!-- arrays-->
 			<section>
+
+				<section>
+					<h2>arrays</h2>
+					<img src="./img\arrays-are-objects.jpg" alt="arrays-are-objects">
+				</section>
 
 				<!-- arrays 1-->
 				<section>
@@ -1870,6 +1975,10 @@
 							//    return a + b;
 						</code>
 					</pre>
+				</section>
+
+				<section>
+					<img src="./img\to-much-javascript.jpg" alt="to-much-javascript">
 				</section>
 
 			</section>
